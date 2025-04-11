@@ -1,38 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Build A Space Program</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="../src/assets/favicon.ico">
 </head>
 <body>
     <header>
-        <h1>Build A Space Program Blog</h1>
+        <div class="logo">Build A Space Program</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="light-icon">☀️</span>
+            <span class="dark-icon">🌙</span>
+        </button>
     </header>
+
     <main>
-        <article>
-            <h2>Welcome to Our Blog!</h2>
-            <p>Stay tuned for updates, articles, and insights related to our space program. We will be sharing exciting news, project updates, and educational content about space exploration.</p>
-        </article>
-        <article>
-            <h2>Upcoming Launches</h2>
-            <p>We are preparing for our next launch! Check back for details on the mission objectives and how you can get involved.</p>
-        </article>
-        <article>
-            <h2>Community Engagement</h2>
-            <p>Join our community events and discussions. We believe in the power of collaboration and knowledge sharing.</p>
-        </article>
+        <section class="blog-header">
+            <h1>Space Engineering Insights</h1>
+            <p>Technical articles, industry updates, and engineering perspectives</p>
+        </section>
+
+        <section class="blog-posts">
+            <article id="launch-vehicles" class="blog-post">
+                <h2>Current Launch Vehicles: An Overview</h2>
+                <div class="post-meta">
+                    <span class="date">April 10, 2025</span>
+                    <span class="category">Rocketry</span>
+                </div>
+                <div class="post-content">
+                    <p>
+                        The current landscape of launch vehicles represents one of the most dynamic periods 
+                        in space access history. From commercial providers to national space agencies, 
+                        the variety of rockets available today offers unprecedented options for reaching orbit.
+                    </p>
+                    
+                    <h3>Heavy Lift Launch Vehicles</h3>
+                    <p>
+                        Heavy lift vehicles capable of delivering substantial payloads to orbit have become 
+                        increasingly important for large satellite deployments, space station resupply, and 
+                        deep space missions. Notable examples include:
+                    </p>
+                    <ul>
+                        <li>SpaceX Starship - Revolutionary fully reusable super heavy-lift vehicle</li>
+                        <li>NASA Space Launch System (SLS) - Government heavy-lift vehicle for deep space exploration</li>
+                        <li>Blue Origin New Glenn - Partially reusable heavy-lift orbital launch vehicle</li>
+                    </ul>
+                    
+                    <h3>Medium Launch Vehicles</h3>
+                    <p>
+                        The medium-lift segment continues to serve as the workhorse for many satellite deployments 
+                        and space missions, offering a balance between payload capacity and launch cost.
+                    </p>
+                    
+                    <h3>Small Launch Vehicles</h3>
+                    <p>
+                        The rapidly growing small satellite market has spurred development of dedicated 
+                        small launch vehicles, providing responsive and cost-effective access to space 
+                        for CubeSats and other small payloads.
+                    </p>
+                    
+                    <p>
+                        [This article is a work in progress. More content to be added about launch vehicle 
+                        specifications, capabilities, and market trends.]
+                    </p>
+                </div>
+            </article>
+            
+            <!-- Additional blog posts would be added here -->
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2023 Build A Space Program. All rights reserved.</p>
+        <p>&copy; 2025 Build A Space Program. All rights reserved.</p>
     </footer>
+
+    <script src="../src/js/app.js"></script>
 </body>
 </html>

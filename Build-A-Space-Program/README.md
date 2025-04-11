@@ -1,56 +1,63 @@
 # Build A Space Program
 
-## Overview
-Build A Space Program is an initiative aimed at educating and engaging individuals in the field of space exploration. This project serves as a platform to share knowledge, updates, and resources related to space programs and technology.
+A website dedicated to sharing knowledge and insights about space engineering, rocketry, and spacecraft systems.
 
 ## Project Structure
-The project is organized as follows:
 
 ```
 Build-A-Space-Program
 ├── public
-│   ├── index.html       # Landing page of the website
-│   ├── about.html       # About page detailing the mission
-│   ├── blog.html        # Blog page for articles and updates
-│   └── styles
-│       └── main.css     # CSS styles for the website
+│ ├── index.html         # Landing page of the website
+│ ├── about.html         # About page detailing the mission
+│ ├── blog.html          # Blog page for articles and updates
+│ └── styles
+│   └── main.css         # CSS styles for the website
 ├── src
-│   ├── js
-│   │   └── app.js       # JavaScript for interactivity
-│   └── assets
-│       └── favicon.ico   # Favicon for the website
-├── package.json          # npm configuration file
-└── README.md             # Project documentation
+│ ├── js
+│ │ └── app.js           # JavaScript for interactivity
+│ └── assets
+│   └── favicon.ico      # Favicon for the website
+├── package.json         # npm configuration file
+└── README.md            # Project documentation
 ```
 
 ## Features
-- **Landing Page**: An engaging introduction to the space program.
-- **About Page**: Information about the mission and goals of the project.
-- **Blog Page**: A section for articles and updates related to space exploration.
-- **Responsive Design**: The website is designed to be accessible on various devices.
 
-## Setup Instructions
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/build-a-space-program.git
-   ```
-2. Navigate to the project directory:
-   ```
-   cd build-a-space-program
-   ```
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Open the `public/index.html` file in your browser to view the landing page.
+- **Responsive Design**: Works on desktop and mobile devices
+- **Dark/Light Mode Toggle**: User preference saved in localStorage
+- **Blog System**: Easy to update with new articles
+- **Clean, Modern UI**: Focused on readability and user experience
 
-## Usage
-- Visit the landing page to learn about the space program.
-- Check the About page for detailed information on the mission.
-- Read the latest articles and updates on the Blog page.
+## Getting Started
 
-## Contributing
-Contributions are welcome! Please submit a pull request or open an issue for any suggestions or improvements.
+1. Clone this repository
+2. Install dependencies: `npm install`
+3. Start local server: `npm start`
+4. Visit `http://localhost:3000` in your browser
+
+## Adding New Blog Posts
+
+To add a new blog post, duplicate the existing article structure in `blog.html` and update the content with your new article. For example:
+
+```html
+<article id="your-article-id" class="blog-post">
+    <h2>Your Article Title</h2>
+    <div class="post-meta">
+        <span class="date">Publication Date</span>
+        <span class="category">Category</span>
+    </div>
+    <div class="post-content">
+        <!-- Your article content here -->
+    </div>
+</article>
+```
+
+## Customization
+
+- **Colors**: Edit theme variables in `main.css`
+- **Fonts**: Change font-family properties in `main.css`
+- **Layout**: Modify the grid and container widths as needed
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+
+MIT

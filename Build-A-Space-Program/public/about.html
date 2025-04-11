@@ -1,31 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Build A Space Program</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="../src/assets/favicon.ico">
 </head>
 <body>
     <header>
-        <h1>About Build A Space Program</h1>
+        <div class="logo">Build A Space Program</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="light-icon">☀️</span>
+            <span class="dark-icon">🌙</span>
+        </button>
     </header>
+
     <main>
-        <section>
-            <h2>Our Mission</h2>
-            <p>Build A Space Program is dedicated to inspiring the next generation of space explorers and innovators. We aim to provide resources, knowledge, and a community for aspiring space enthusiasts.</p>
-        </section>
-        <section>
-            <h2>What We Do</h2>
-            <p>We offer educational materials, workshops, and collaborative projects that allow individuals to engage with space science and technology. Our goal is to make space exploration accessible to everyone.</p>
-        </section>
-        <section>
-            <h2>Join Us</h2>
-            <p>Whether you're a student, educator, or simply a space lover, we invite you to join our community. Together, we can push the boundaries of what is possible in space exploration.</p>
+        <section class="about-section">
+            <h1>About Our Mission</h1>
+            <p>
+                Build A Space Program was created to share knowledge, experience, and insights about the space industry, 
+                rocketry, and spacecraft engineering. Our mission is to make space knowledge accessible to everyone,
+                from students and hobbyists to professionals seeking new perspectives.
+            </p>
+            
+            <h2>Why We Started This Blog</h2>
+            <p>
+                The path to becoming a space engineer is often unclear and filled with challenges. 
+                We started this blog to document "Things I wish I knew when I was starting out as a space engineer" - 
+                practical knowledge that can help newcomers navigate this exciting field.
+            </p>
+            
+            <h2>What We Cover</h2>
+            <ul>
+                <li>Launch vehicle technologies and developments</li>
+                <li>Spacecraft systems and engineering challenges</li>
+                <li>Space mission planning and execution</li>
+                <li>Industry trends and opportunities</li>
+                <li>Educational resources and career guidance</li>
+            </ul>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2023 Build A Space Program. All rights reserved.</p>
+        <p>&copy; 2025 Build A Space Program. All rights reserved.</p>
     </footer>
+
+    <script src="../src/js/app.js"></script>
 </body>
 </html>

@@ -1,22 +1,21 @@
 {
   "name": "build-a-space-program",
   "version": "1.0.0",
-  "description": "A project to create a space program website with a landing page, about page, and blog.",
+  "description": "A website dedicated to sharing space engineering knowledge and insights",
   "main": "src/js/app.js",
   "scripts": {
-    "start": "live-server public",
-    "build": "echo 'Build step not defined'",
-    "test": "echo 'No tests defined'"
+    "start": "serve public",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "space",
-    "program",
-    "website"
+    "engineering",
+    "rockets",
+    "blog"
   ],
-  "author": "Your Name",
+  "author": "",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "serve": "^14.0.1"
   }
 }
