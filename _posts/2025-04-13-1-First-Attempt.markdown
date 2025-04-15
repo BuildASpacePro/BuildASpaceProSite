@@ -11,7 +11,7 @@ In this post, we explore our first attempt at creating a blog post using Jekyll.
 
 To install Wireshark on Ubuntu, open your terminal and run the following commands:
 
-{% highlight bash linenos %}
+{% highlight console linenos %}
 sudo apt update
 sudo apt install wireshark -y
 {% endhighlight %}
