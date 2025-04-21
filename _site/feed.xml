@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-15T20:31:39+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-04-14T20:39:44+01:00</published><updated>2025-04-14T20:39:44+01:00</updated><id>http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-16T17:07:14+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">1. Packets</title><link href="http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets.html" rel="alternate" type="text/html" title="1. Packets" /><published>2025-04-15T13:00:00+01:00</published><updated>2025-04-15T13:00:00+01:00</updated><id>http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets</id><content type="html" xml:base="http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets.html"><![CDATA[<p>When I started as an aerospace engineer, I didn’t realise that packets <strong>dominate</strong> the digital world. From your smartphone, Wi-Fi router, computer, and smart devices – all these machines use digital ‘packets’ of data to communicate with other machines in a network. It didn’t help that when I began work, I didn’t even know what packets looked like – despite using them every day!</p>
+
+<p>We all know that computers talk in binary (1s and 0s) using formatted units of data arranged into packets. These packets are stored in <strong>frames</strong>, which are the basic units of communication at the data link layer. Frames encapsulate packets with additional information, such as source and destination addresses, and can be analyzed using tools like Wireshark. Wireshark allows you to see how packets are stored in frames and how they travel across a network.</p>
+
+<h3 id="installing-wireshark-on-ubuntu">Installing Wireshark on Ubuntu</h3>
+
+<p>To install Wireshark on Ubuntu, open your terminal and run the following commands:</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="go">sudo apt update
+sudo apt install wireshark -y</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="installing-wireshark-on-windows">Installing Wireshark on Windows</h3>
+
+<p>To install Wireshark on Windows, follow these steps:</p>
+
+<ol>
+  <li>Visit the <a href="https://www.wireshark.org/download.html">Wireshark download page</a>.</li>
+  <li>Download the installer for Windows.</li>
+  <li>Run the installer and follow the on-screen instructions.</li>
+  <li>During installation, you may be prompted to install additional components like <strong>Npcap</strong> (required for packet capturing). Make sure to install it.</li>
+</ol>
+
+<h3 id="installing-wireshark-on-macos">Installing Wireshark on macOS</h3>
+
+<p>To install Wireshark on macOS, use the following command in the terminal:</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="go">brew install --cask wireshark</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>If you don’t have Homebrew installed, you can install it first by running:</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="gp">/bin/bash -c "$</span><span class="o">(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="o">)</span><span class="s2">"</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Alternatively, you can download the installer from the <a href="https://www.wireshark.org/download.html">Wireshark website</a> and follow the installation instructions.</p>
+
+<h3 id="packets-and-satellites">Packets and Satellites</h3>
+
+<p>Packets are not just limited to terrestrial networks; they are also the backbone of satellite communications. Satellites use packets to send and receive data between ground stations and other satellites. These packets are transmitted over radio frequencies and are formatted to include error correction and synchronization data to ensure reliable communication over vast distances.</p>
+
+<p>Wireshark can be used to analyze satellite communication packets if you have access to the appropriate data streams. This makes it an invaluable tool for understanding how data is transmitted in space, whether for GPS, weather monitoring, or internet services provided by satellite constellations.</p>
+
+<hr />
+
+<p>Understanding packets is fundamental to networking, whether you’re troubleshooting a local network or working on cutting-edge satellite systems. Tools like Wireshark make it easier to visualize and analyze these packets, helping engineers and enthusiasts alike to dive deeper into the world of digital communication.</p>]]></content><author><name></name></author><category term="packets," /><category term="networking," /><category term="IP" /><summary type="html"><![CDATA[When I started as an aerospace engineer, I didn’t realise that packets dominate the digital world. From your smartphone, Wi-Fi router, computer, and smart devices – all these machines use digital ‘packets’ of data to communicate with other machines in a network. It didn’t help that when I began work, I didn’t even know what packets looked like – despite using them every day!]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-04-14T20:39:44+01:00</published><updated>2025-04-14T20:39:44+01:00</updated><id>http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
@@ -15,16 +64,6 @@
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
 <p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">First Attempt</title><link href="http://localhost:4000/blog/attempt/2025/04/13/1-First-Attempt.html" rel="alternate" type="text/html" title="First Attempt" /><published>2025-04-13T13:00:00+01:00</published><updated>2025-04-13T13:00:00+01:00</updated><id>http://localhost:4000/blog/attempt/2025/04/13/1-First-Attempt</id><content type="html" xml:base="http://localhost:4000/blog/attempt/2025/04/13/1-First-Attempt.html"><![CDATA[<p>In this post, we explore our first attempt at creating a blog post using Jekyll. As part of this, let’s include a quick guide on how to install Wireshark on Ubuntu.</p>
-
-<h3 id="installing-wireshark-on-ubuntu">Installing Wireshark on Ubuntu</h3>
-
-<p>To install Wireshark on Ubuntu, open your terminal and run the following commands:</p>
-
-<figure class="highlight"><pre><code class="language-console" data-lang="console"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre><span class="go">sudo apt update
-sudo apt install wireshark -y</span>
-</pre></td></tr></tbody></table></code></pre></figure>]]></content><author><name></name></author><category term="blog" /><category term="attempt" /><summary type="html"><![CDATA[In this post, we explore our first attempt at creating a blog post using Jekyll. As part of this, let’s include a quick guide on how to install Wireshark on Ubuntu.]]></summary></entry><entry><title type="html">First Attempt</title><link href="http://localhost:4000/blog/attempt/2025/04/13/1-Tools-Every-Engineer-Needs.html" rel="alternate" type="text/html" title="First Attempt" /><published>2025-04-13T13:00:00+01:00</published><updated>2025-04-13T13:00:00+01:00</updated><id>http://localhost:4000/blog/attempt/2025/04/13/1-Tools-Every-Engineer-Needs</id><content type="html" xml:base="http://localhost:4000/blog/attempt/2025/04/13/1-Tools-Every-Engineer-Needs.html"><![CDATA[<p>In this post, we explore our first attempt at creating a blog post using Jekyll. As part of this, let’s include a quick guide on how to install Wireshark on Ubuntu.</p>
 
 <h3 id="installing-wireshark-on-ubuntu">Installing Wireshark on Ubuntu</h3>
 

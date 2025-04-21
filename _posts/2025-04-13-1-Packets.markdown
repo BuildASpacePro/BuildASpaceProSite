@@ -1,0 +1,56 @@
+---
+layout: post
+title: "1. Packets"
+date: 2025-04-15 12:00:00 +0000
+categories: packets, networking, IP
+---
+
+When I started as an aerospace engineer, I didn't realise that packets **dominate** the digital world. From your smartphone, Wi-Fi router, computer, and smart devices – all these machines use digital 'packets' of data to communicate with other machines in a network. It didn't help that when I began work, I didn't even know what packets looked like – despite using them every day!
+
+We all know that computers talk in binary (1s and 0s) using formatted units of data arranged into packets. These packets are stored in **frames**, which are the basic units of communication at the data link layer. Frames encapsulate packets with additional information, such as source and destination addresses, and can be analyzed using tools like Wireshark. Wireshark allows you to see how packets are stored in frames and how they travel across a network.
+
+### Installing Wireshark on Ubuntu
+
+To install Wireshark on Ubuntu, open your terminal and run the following commands:
+
+{% highlight console linenos %}
+sudo apt update
+sudo apt install wireshark -y
+{% endhighlight %}
+
+### Installing Wireshark on Windows
+
+To install Wireshark on Windows, follow these steps:
+
+1. Visit the [Wireshark download page](https://www.wireshark.org/download.html).
+2. Download the installer for Windows.
+3. Run the installer and follow the on-screen instructions.
+4. During installation, you may be prompted to install additional components like **Npcap** (required for packet capturing). Make sure to install it.
+
+### Installing Wireshark on macOS
+
+To install Wireshark on macOS, use the following command in the terminal:
+
+{% highlight console linenos %}
+brew install --cask wireshark
+{% endhighlight %}
+
+If you don’t have Homebrew installed, you can install it first by running:
+
+{% highlight console linenos %}
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+{% endhighlight %}
+
+Alternatively, you can download the installer from the [Wireshark website](https://www.wireshark.org/download.html) and follow the installation instructions.
+
+### Packets and Satellites
+
+Packets are not just limited to terrestrial networks; they are also the backbone of satellite communications. Satellites use packets to send and receive data between ground stations and other satellites. These packets are transmitted over radio frequencies and are formatted to include error correction and synchronization data to ensure reliable communication over vast distances.
+
+Wireshark can be used to analyze satellite communication packets if you have access to the appropriate data streams. This makes it an invaluable tool for understanding how data is transmitted in space, whether for GPS, weather monitoring, or internet services provided by satellite constellations.
+
+---
+
+Understanding packets is fundamental to networking, whether you're troubleshooting a local network or working on cutting-edge satellite systems. Tools like Wireshark make it easier to visualize and analyze these packets, helping engineers and enthusiasts alike to dive deeper into the world of digital communication.
+
+

@@ -1,0 +1,11 @@
+# Ignore all log files
+#*.log
+
+# Ignore a specific folder
+#/private/
+
+# Ignore a specific file
+#secret-config.json
+
+#Notes
+notes.txt
