@@ -6,57 +6,85 @@ A website dedicated to sharing knowledge and insights about space engineering, r
 
 ```
 Build-A-Space-Program
-├── public
-│ ├── index.html         # Landing page of the website
-│ ├── about.html         # About page detailing the mission
-│ ├── blog.html          # Blog page for articles and updates
-│ └── styles
-│   └── main.css         # CSS styles for the website
-├── src
-│ ├── js
-│ │ └── app.js           # JavaScript for interactivity
-│ └── assets
-│   └── favicon.ico      # Favicon for the website
-├── package.json         # npm configuration file
-└── README.md            # Project documentation
+├── site
+│   ├── _posts/                 # Blog posts written in Markdown
+│   │   └── 2025-04-14-welcome-to-jekyll.markdown
+│   ├── _site/                  # Generated static site (do not edit directly)
+│   ├── _config.yml             # Jekyll configuration file
+│   ├── index.markdown          # Landing page content
+│   ├── about.markdown          # About page content
+│   ├── 404.html                # Custom 404 error page
+│   ├── Gemfile                 # Ruby gems for Jekyll and plugins
+│   └── .gitignore              # Files and directories to ignore in Git
+├── CNAME                       # Custom domain configuration
+└── README.md                   # Project documentation
 ```
 
 ## Features
 
-- **Responsive Design**: Works on desktop and mobile devices
-- **Dark/Light Mode Toggle**: User preference saved in localStorage
-- **Blog System**: Easy to update with new articles
-- **Clean, Modern UI**: Focused on readability and user experience
+- **Static Site Generator**: Powered by Jekyll for fast and secure static websites.
+- **Markdown Support**: Write blog posts and pages in Markdown for simplicity.
+- **Customizable Theme**: Based on the Minima theme, easily customizable via `_config.yml` and CSS.
+- **Blog System**: Automatically generates blog pages from Markdown files in the `_posts` directory.
 
 ## Getting Started
 
-1. Clone this repository
-2. Install dependencies: `npm install`
-3. Start local server: `npm start`
-4. Visit `http://localhost:3000` in your browser
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/Build-A-Space-Program.git
+   cd Build-A-Space-Program/site
+   ```
+
+2. Install dependencies:
+   ```bash
+   bundle install
+   ```
+
+3. Serve the site locally:
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+4. Open your browser and visit:
+   ```
+   http://localhost:4000
+   ```
 
 ## Adding New Blog Posts
 
-To add a new blog post, duplicate the existing article structure in `blog.html` and update the content with your new article. For example:
+1. Create a new Markdown file in the `_posts` directory. Name it using the format:
+   ```
+   YEAR-MONTH-DAY-title.markdown
+   ```
 
-```html
-<article id="your-article-id" class="blog-post">
-    <h2>Your Article Title</h2>
-    <div class="post-meta">
-        <span class="date">Publication Date</span>
-        <span class="category">Category</span>
-    </div>
-    <div class="post-content">
-        <!-- Your article content here -->
-    </div>
-</article>
-```
+2. Add the following front matter to the top of the file:
+   ```markdown
+   ---
+   layout: post
+   title: "Your Blog Post Title"
+   date: YYYY-MM-DD HH:MM:SS +0000
+   categories: [category1, category2]
+   ---
+   ```
+
+3. Write your content below the front matter using Markdown syntax.
+
+4. Save the file and restart the Jekyll server to see your changes.
 
 ## Customization
 
-- **Colors**: Edit theme variables in `main.css`
-- **Fonts**: Change font-family properties in `main.css`
-- **Layout**: Modify the grid and container widths as needed
+- **Site Settings**: Update `_config.yml` to change the site title, description, and other global settings.
+- **Theme Customization**: Modify the CSS in the Minima theme or override it by adding custom styles.
+- **Navigation**: Edit the navigation links in the `_layouts` or `_includes` directory (if overridden).
+
+## Deployment
+
+1. Build the site for production:
+   ```bash
+   bundle exec jekyll build
+   ```
+
+2. Deploy the contents of the `_site` directory to your web server or hosting platform (e.g., GitHub Pages).
 
 ## License
 

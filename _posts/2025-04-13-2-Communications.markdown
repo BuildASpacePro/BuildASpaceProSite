@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "First Attempt"
+title: "2. Communications"
 date: 2025-04-13 12:00:00 +0000
-categories: blog attempt
+categories: RF, optical, comms, subsystem
 ---
 
 In this post, we explore our first attempt at creating a blog post using Jekyll. As part of this, let's include a quick guide on how to install Wireshark on Ubuntu.

@@ -1,19 +1,18 @@
 ---
 layout: post
-title: "First Attempt"
+title: "3. Tools"
 date: 2025-04-13 12:00:00 +0000
-categories: blog attempt
+categories: design, satellite, space program, tools
 ---
 
-In this post, we explore our first attempt at creating a blog post using Jekyll. As part of this, let's include a quick guide on how to install Wireshark on Ubuntu.
+In this post, I'm going to list all the sofrware tools needed to build a space program. This list isn't exhaustive, but should provide an engineer with enough to build a Minimum Viable Product (MVP).
 
-### Installing Wireshark on Ubuntu
-
-To install Wireshark on Ubuntu, open your terminal and run the following commands:
-
-{% highlight console linenos %}
-sudo apt update
-sudo apt install wireshark -y
-{% endhighlight %}
+1. Visual Studio Code
+2. ANSYS STK
+3. NASA'S COSMOGRAPHIA
+4. OpenC3
+5. python Skyfield module
+6. GNUradio
+7. Solidworks
 
 
