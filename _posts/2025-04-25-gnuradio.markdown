@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Introduction to GNU Radio"
+date: 2025-04-25 12:00:00 +0000
+categories: tools gnuradio
+---
+
+GNU Radio is an open-source toolkit for building software-defined radios.
+
+### Installation
+
+1. Install GNU Radio using your package manager:
+   ```bash
+   sudo apt install gnuradio
+   ```
+
+### Basic Tutorial
+
+1. Open GNU Radio Companion and create a new flowgraph.
+2. Add blocks for signal processing and connect them.
+3. Run the flowgraph to process signals.
+
+GNU Radio is essential for developing communication systems for spacecraft.
