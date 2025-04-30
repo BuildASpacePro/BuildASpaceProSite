@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting Started with Visual Studio Code"
+title: "3. Getting Started with Visual Studio Code"
 date: 2025-04-20 12:00:00 +0000
 categories: tools vscode
 ---
