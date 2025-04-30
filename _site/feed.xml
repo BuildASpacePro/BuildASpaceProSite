@@ -1,51 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-30T21:01:50+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Build A Space Programme</title><subtitle>Build A Space Pro - things I wish I knew when I first wanted to become an aoerspace engineer</subtitle><entry><title type="html">Linking the whole chain</title><link href="http://localhost:4000/chain,/space,/ground/2025/04/26/chain.html" rel="alternate" type="text/html" title="Linking the whole chain" /><published>2025-04-26T13:00:00+01:00</published><updated>2025-04-26T13:00:00+01:00</updated><id>http://localhost:4000/chain,/space,/ground/2025/04/26/chain</id><content type="html" xml:base="http://localhost:4000/chain,/space,/ground/2025/04/26/chain.html"><![CDATA[<p>To illustrate the point I’m going to make, I’m going to use an analogy. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-30T21:30:28+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Build A Space Programme</title><subtitle>Build A Space Pro - things I wish I knew when I first wanted to become an aoerspace engineer</subtitle><entry><title type="html">5. Linking the whole chain</title><link href="http://localhost:4000/chain,/space,/ground/2025/04/26/5-chain.html" rel="alternate" type="text/html" title="5. Linking the whole chain" /><published>2025-04-26T13:00:00+01:00</published><updated>2025-04-26T13:00:00+01:00</updated><id>http://localhost:4000/chain,/space,/ground/2025/04/26/5-chain</id><content type="html" xml:base="http://localhost:4000/chain,/space,/ground/2025/04/26/5-chain.html"><![CDATA[<p>To illustrate the point I’m going to make, I’m going to use an analogy. 
 Imagine a metal chain, built by interleaving individual links together and able to tether two things together. No matter how strong previous links in the chain are - it’s only as strong as the weakest link. In other words, strengthening links two and three won’t improve the strength of link 4, which might be weakened from corrosion or the elements. This determines the tensile stress of the chain.</p>
 
 <p>In the same way, a space program is only as strong as the weakest element. Imagine the most basic chain required to send data to a satellite: Mission Control software &gt; Ground Station network &gt; RF modem &gt; amplifier &gt; Ground station antenna &gt; through the atmosphere &gt; satellite antenna &gt; Low Noise Amplifier &gt; RF modem &gt; satellite On-board Computer (OBC). This kind of chain may look different depending on architecture or implementation, but the point remains - if you remove the RF modem, then no data gets to the satellite. Or if the link budget doesn’t have enough margin, then the satellite won’t pick up the data through the noise. Strengthening the ground station amplifier won’t help if the satellite OBC keeps failing.</p>
 
-<p>This is often why space programs include redundancy within system designs, so that even if one part of the link in the chain fails, another can take it’s place. This is also why teams are multi-disciplinary and not homogenous - no amount of software engineers could replace an expert RF engineer. It takes different skillsets and knowledge bases to build and support the kind of systems that make a space program function.</p>]]></content><author><name></name></author><category term="chain," /><category term="space," /><category term="ground" /><summary type="html"><![CDATA[To illustrate the point I’m going to make, I’m going to use an analogy. Imagine a metal chain, built by interleaving individual links together and able to tether two things together. No matter how strong previous links in the chain are - it’s only as strong as the weakest link. In other words, strengthening links two and three won’t improve the strength of link 4, which might be weakened from corrosion or the elements. This determines the tensile stress of the chain.]]></summary></entry><entry><title type="html">Introduction to GNU Radio</title><link href="http://localhost:4000/tools/gnuradio/2025/04/25/gnuradio.html" rel="alternate" type="text/html" title="Introduction to GNU Radio" /><published>2025-04-25T13:00:00+01:00</published><updated>2025-04-25T13:00:00+01:00</updated><id>http://localhost:4000/tools/gnuradio/2025/04/25/gnuradio</id><content type="html" xml:base="http://localhost:4000/tools/gnuradio/2025/04/25/gnuradio.html"><![CDATA[<p>GNU Radio is an open-source toolkit for building software-defined radios.</p>
-
-<h3 id="installation">Installation</h3>
-
-<ol>
-  <li>Install GNU Radio using your package manager:
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>gnuradio
-</code></pre></div>    </div>
-  </li>
-</ol>
-
-<h3 id="basic-tutorial">Basic Tutorial</h3>
-
-<ol>
-  <li>Open GNU Radio Companion and create a new flowgraph.</li>
-  <li>Add blocks for signal processing and connect them.</li>
-  <li>Run the flowgraph to process signals.</li>
-</ol>
-
-<p>GNU Radio is essential for developing communication systems for spacecraft.</p>]]></content><author><name></name></author><category term="tools" /><category term="gnuradio" /><summary type="html"><![CDATA[GNU Radio is an open-source toolkit for building software-defined radios.]]></summary></entry><entry><title type="html">Using Python Skyfield for Orbital Calculations</title><link href="http://localhost:4000/tools/python/skyfield/2025/04/24/python-skyfield.html" rel="alternate" type="text/html" title="Using Python Skyfield for Orbital Calculations" /><published>2025-04-24T13:00:00+01:00</published><updated>2025-04-24T13:00:00+01:00</updated><id>http://localhost:4000/tools/python/skyfield/2025/04/24/python-skyfield</id><content type="html" xml:base="http://localhost:4000/tools/python/skyfield/2025/04/24/python-skyfield.html"><![CDATA[<p>Skyfield is a Python library for precise orbital calculations.</p>
-
-<h3 id="installation">Installation</h3>
-
-<ol>
-  <li>Install Skyfield using pip:
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>skyfield
-</code></pre></div>    </div>
-  </li>
-</ol>
-
-<h3 id="basic-tutorial">Basic Tutorial</h3>
-
-<ol>
-  <li>Import Skyfield and load ephemeris data:
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">skyfield.api</span> <span class="kn">import</span> <span class="n">load</span>
-<span class="n">planets</span> <span class="o">=</span> <span class="nf">load</span><span class="p">(</span><span class="sh">'</span><span class="s">de421.bsp</span><span class="sh">'</span><span class="p">)</span>
-<span class="n">earth</span> <span class="o">=</span> <span class="n">planets</span><span class="p">[</span><span class="sh">'</span><span class="s">earth</span><span class="sh">'</span><span class="p">]</span>
-</code></pre></div>    </div>
-  </li>
-  <li>Calculate satellite positions and visualize orbits.</li>
-</ol>
-
-<p>Skyfield is ideal for accurate orbital mechanics calculations.</p>]]></content><author><name></name></author><category term="tools" /><category term="python" /><category term="skyfield" /><summary type="html"><![CDATA[Skyfield is a Python library for precise orbital calculations.]]></summary></entry><entry><title type="html">3. Procedures</title><link href="http://localhost:4000/tools/openc3/2025/04/23/3-Procedures.html" rel="alternate" type="text/html" title="3. Procedures" /><published>2025-04-23T13:00:00+01:00</published><updated>2025-04-23T13:00:00+01:00</updated><id>http://localhost:4000/tools/openc3/2025/04/23/3-Procedures</id><content type="html" xml:base="http://localhost:4000/tools/openc3/2025/04/23/3-Procedures.html"><![CDATA[<p>In this article, we’ll explore the importance of procedures in spacecraft operations and provide an example procedure template.</p>
+<p>This is often why space programs include redundancy within system designs, so that even if one part of the link in the chain fails, another can take it’s place. This is also why teams are multi-disciplinary and not homogenous - no amount of software engineers could replace an expert RF engineer. It takes different skillsets and knowledge bases to build and support the kind of systems that make a space program function.</p>]]></content><author><name></name></author><category term="chain," /><category term="space," /><category term="ground" /><summary type="html"><![CDATA[To illustrate the point I’m going to make, I’m going to use an analogy. Imagine a metal chain, built by interleaving individual links together and able to tether two things together. No matter how strong previous links in the chain are - it’s only as strong as the weakest link. In other words, strengthening links two and three won’t improve the strength of link 4, which might be weakened from corrosion or the elements. This determines the tensile stress of the chain.]]></summary></entry><entry><title type="html">4. Procedures</title><link href="http://localhost:4000/tools/openc3/2025/04/23/4-Procedures.html" rel="alternate" type="text/html" title="4. Procedures" /><published>2025-04-23T13:00:00+01:00</published><updated>2025-04-23T13:00:00+01:00</updated><id>http://localhost:4000/tools/openc3/2025/04/23/4-Procedures</id><content type="html" xml:base="http://localhost:4000/tools/openc3/2025/04/23/4-Procedures.html"><![CDATA[<p>In this article, we’ll explore the importance of procedures in spacecraft operations and provide an example procedure template.</p>
 
 <hr />
 
@@ -132,41 +90,7 @@ Imagine a metal chain, built by interleaving individual links together and able 
 
 <p>By adhering to procedures, operators can focus on executing tasks rather than improvising, which is especially important in high-pressure situations.</p>
 
-<hr />]]></content><author><name></name></author><category term="tools" /><category term="openc3" /><summary type="html"><![CDATA[In this article, we’ll explore the importance of procedures in spacecraft operations and provide an example procedure template.]]></summary></entry><entry><title type="html">Exploring NASA’s Cosmographia</title><link href="http://localhost:4000/tools/nasa/cosmographia/2025/04/22/nasa-cosmographia.html" rel="alternate" type="text/html" title="Exploring NASA’s Cosmographia" /><published>2025-04-22T13:00:00+01:00</published><updated>2025-04-22T13:00:00+01:00</updated><id>http://localhost:4000/tools/nasa/cosmographia/2025/04/22/nasa-cosmographia</id><content type="html" xml:base="http://localhost:4000/tools/nasa/cosmographia/2025/04/22/nasa-cosmographia.html"><![CDATA[<p>NASA’s Cosmographia is a 3D visualization tool for space missions.</p>
-
-<h3 id="installation">Installation</h3>
-
-<ol>
-  <li>Download Cosmographia from the <a href="https://cosmographia.com/">NASA website</a>.</li>
-  <li>Install the software on your computer.</li>
-</ol>
-
-<h3 id="basic-tutorial">Basic Tutorial</h3>
-
-<ol>
-  <li>Open Cosmographia and load a mission dataset.</li>
-  <li>Explore the 3D environment to visualize spacecraft trajectories.</li>
-  <li>Use the timeline to simulate mission events.</li>
-</ol>
-
-<p>Cosmographia is an excellent tool for visualizing complex space missions.</p>]]></content><author><name></name></author><category term="tools" /><category term="nasa" /><category term="cosmographia" /><summary type="html"><![CDATA[NASA’s Cosmographia is a 3D visualization tool for space missions.]]></summary></entry><entry><title type="html">Introduction to ANSYS STK</title><link href="http://localhost:4000/tools/ansys/stk/2025/04/21/ansys-stk.html" rel="alternate" type="text/html" title="Introduction to ANSYS STK" /><published>2025-04-21T13:00:00+01:00</published><updated>2025-04-21T13:00:00+01:00</updated><id>http://localhost:4000/tools/ansys/stk/2025/04/21/ansys-stk</id><content type="html" xml:base="http://localhost:4000/tools/ansys/stk/2025/04/21/ansys-stk.html"><![CDATA[<p>ANSYS STK (Systems Tool Kit) is a powerful tool for modeling and analyzing space missions.</p>
-
-<h3 id="installation">Installation</h3>
-
-<ol>
-  <li>Download STK from the <a href="https://www.ansys.com/">ANSYS website</a>.</li>
-  <li>Follow the installation guide provided.</li>
-</ol>
-
-<h3 id="basic-tutorial">Basic Tutorial</h3>
-
-<ol>
-  <li>Create a new scenario in STK.</li>
-  <li>Add a satellite and define its orbit parameters.</li>
-  <li>Use the 3D visualization to analyze the satellite’s trajectory.</li>
-</ol>
-
-<p>STK is widely used for mission planning and analysis in the aerospace industry.</p>]]></content><author><name></name></author><category term="tools" /><category term="ansys" /><category term="stk" /><summary type="html"><![CDATA[ANSYS STK (Systems Tool Kit) is a powerful tool for modeling and analyzing space missions.]]></summary></entry><entry><title type="html">Getting Started with Visual Studio Code</title><link href="http://localhost:4000/tools/vscode/2025/04/20/visual-studio-code.html" rel="alternate" type="text/html" title="Getting Started with Visual Studio Code" /><published>2025-04-20T13:00:00+01:00</published><updated>2025-04-20T13:00:00+01:00</updated><id>http://localhost:4000/tools/vscode/2025/04/20/visual-studio-code</id><content type="html" xml:base="http://localhost:4000/tools/vscode/2025/04/20/visual-studio-code.html"><![CDATA[<p>Visual Studio Code (VS Code) is a lightweight, powerful code editor with support for extensions and debugging.</p>
+<hr />]]></content><author><name></name></author><category term="tools" /><category term="openc3" /><summary type="html"><![CDATA[In this article, we’ll explore the importance of procedures in spacecraft operations and provide an example procedure template.]]></summary></entry><entry><title type="html">3. Getting Started with Visual Studio Code</title><link href="http://localhost:4000/tools/vscode/2025/04/20/3-visual-studio-code.html" rel="alternate" type="text/html" title="3. Getting Started with Visual Studio Code" /><published>2025-04-20T13:00:00+01:00</published><updated>2025-04-20T13:00:00+01:00</updated><id>http://localhost:4000/tools/vscode/2025/04/20/3-visual-studio-code</id><content type="html" xml:base="http://localhost:4000/tools/vscode/2025/04/20/3-visual-studio-code.html"><![CDATA[<p>Visual Studio Code (VS Code) is a lightweight, powerful code editor with support for extensions and debugging.</p>
 
 <h3 id="why-vs-code-is-a-great-ide">Why VS Code is a Great IDE</h3>
 
@@ -210,7 +134,7 @@ Imagine a metal chain, built by interleaving individual links together and able 
 
 <p>Always review and test AI-generated code to ensure it meets your requirements. A safe workflow is human (prompt) &gt; AI (suggestion) &gt; human (validation), avoiding direct copying to maintain quality and accountability.</p>
 
-<p>VS Code is an essential tool for writing and debugging code for spacecraft systems.</p>]]></content><author><name></name></author><category term="tools" /><category term="vscode" /><summary type="html"><![CDATA[Visual Studio Code (VS Code) is a lightweight, powerful code editor with support for extensions and debugging.]]></summary></entry><entry><title type="html">1. Packets</title><link href="http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets.html" rel="alternate" type="text/html" title="1. Packets" /><published>2025-04-15T13:00:00+01:00</published><updated>2025-04-15T13:00:00+01:00</updated><id>http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets</id><content type="html" xml:base="http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets.html"><![CDATA[<p>When I started as an aerospace engineer, I didn’t realise that packets <strong>dominate</strong> the digital world. From your smartphone, Wi-Fi router, computer, and smart devices – all these machines use digital ‘packets’ of data to communicate with other machines in a network. It didn’t help that when I began work, I didn’t even know what packets looked like – despite using them every day!</p>
+<p>VS Code is an essential tool for writing and debugging code for spacecraft systems.</p>]]></content><author><name></name></author><category term="tools" /><category term="vscode" /><summary type="html"><![CDATA[Visual Studio Code (VS Code) is a lightweight, powerful code editor with support for extensions and debugging.]]></summary></entry><entry><title type="html">2. Packets</title><link href="http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets.html" rel="alternate" type="text/html" title="2. Packets" /><published>2025-04-15T13:00:00+01:00</published><updated>2025-04-15T13:00:00+01:00</updated><id>http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets</id><content type="html" xml:base="http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets.html"><![CDATA[<p>When I started as an aerospace engineer, I didn’t realise that packets <strong>dominate</strong> the digital world. From your smartphone, Wi-Fi router, computer, and smart devices – all these machines use digital ‘packets’ of data to communicate with other machines in a network. It didn’t help that when I began work, I didn’t even know what packets looked like – despite using them every day!</p>
 
 <p>We all know that computers talk in binary (1s and 0s) using formatted units of data arranged into packets. These packets are stored in <strong>frames</strong>, which are the basic units of communication at the data link layer. Frames encapsulate packets with additional information, such as source and destination addresses, and can be analyzed using tools like Wireshark. Wireshark allows you to see how packets are stored in frames and how they travel across a network.</p>
 
@@ -259,30 +183,14 @@ sudo apt install wireshark -y</span>
 
 <hr />
 
-<p>Understanding packets is fundamental to networking, whether you’re troubleshooting a local network or working on cutting-edge satellite systems. Tools like Wireshark make it easier to visualize and analyze these packets, helping engineers and enthusiasts alike to dive deeper into the world of digital communication.</p>]]></content><author><name></name></author><category term="packets," /><category term="networking," /><category term="IP" /><summary type="html"><![CDATA[When I started as an aerospace engineer, I didn’t realise that packets dominate the digital world. From your smartphone, Wi-Fi router, computer, and smart devices – all these machines use digital ‘packets’ of data to communicate with other machines in a network. It didn’t help that when I began work, I didn’t even know what packets looked like – despite using them every day!]]></summary></entry><entry><title type="html">1. Tools that every space engineer needs</title><link href="http://localhost:4000/site/tools,/engineering,/space/2025/04/15/1-Tools-Every-Engineer-Needs.html" rel="alternate" type="text/html" title="1. Tools that every space engineer needs" /><published>2025-04-15T13:00:00+01:00</published><updated>2025-04-15T13:00:00+01:00</updated><id>http://localhost:4000/site/tools,/engineering,/space/2025/04/15/1-Tools-Every-Engineer-Needs</id><content type="html" xml:base="http://localhost:4000/site/tools,/engineering,/space/2025/04/15/1-Tools-Every-Engineer-Needs.html"><![CDATA[<p>In this post, I’m going to lay out all the tools I wish I knew about when I was an engineer fresh at university.</p>
+<p>Understanding packets is fundamental to networking, whether you’re troubleshooting a local network or working on cutting-edge satellite systems. Tools like Wireshark make it easier to visualize and analyze these packets, helping engineers and enthusiasts alike to dive deeper into the world of digital communication.</p>]]></content><author><name></name></author><category term="packets," /><category term="networking," /><category term="IP" /><summary type="html"><![CDATA[When I started as an aerospace engineer, I didn’t realise that packets dominate the digital world. From your smartphone, Wi-Fi router, computer, and smart devices – all these machines use digital ‘packets’ of data to communicate with other machines in a network. It didn’t help that when I began work, I didn’t even know what packets looked like – despite using them every day!]]></summary></entry><entry><title type="html">1. Tools</title><link href="http://localhost:4000/design,/satellite,/space/program,/tools/2025/04/13/2-Communications-copy.html" rel="alternate" type="text/html" title="1. Tools" /><published>2025-04-13T13:00:00+01:00</published><updated>2025-04-13T13:00:00+01:00</updated><id>http://localhost:4000/design,/satellite,/space/program,/tools/2025/04/13/2-Communications%20copy</id><content type="html" xml:base="http://localhost:4000/design,/satellite,/space/program,/tools/2025/04/13/2-Communications-copy.html"><![CDATA[<p>In this post, I’m going to list all the sofrware tools needed to build a space program. This list isn’t exhaustive, but should provide an engineer with enough to build a Minimum Viable Product (MVP).</p>
 
-<h3 id="installing-wireshark-on-ubuntu">Installing Wireshark on Ubuntu</h3>
-
-<p>To install Wireshark on Ubuntu, open your terminal and run the following commands:</p>
-
-<figure class="highlight"><pre><code class="language-console" data-lang="console"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre><span class="go">sudo apt update
-sudo apt install wireshark -y</span>
-</pre></td></tr></tbody></table></code></pre></figure>]]></content><author><name></name></author><category term="site" /><category term="tools," /><category term="engineering," /><category term="space" /><summary type="html"><![CDATA[In this post, I’m going to lay out all the tools I wish I knew about when I was an engineer fresh at university.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-04-14T20:39:44+01:00</published><updated>2025-04-14T20:39:44+01:00</updated><id>http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>Jekyll requires blog post files to be named according to the following format:</p>
-
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
+<ol>
+  <li>Visual Studio Code</li>
+  <li>ANSYS STK</li>
+  <li>NASA’S COSMOGRAPHIA</li>
+  <li>OpenC3</li>
+  <li>python Skyfield module</li>
+  <li>GNUradio</li>
+  <li>Solidworks</li>
+</ol>]]></content><author><name></name></author><category term="design," /><category term="satellite," /><category term="space" /><category term="program," /><category term="tools" /><summary type="html"><![CDATA[In this post, I’m going to list all the sofrware tools needed to build a space program. This list isn’t exhaustive, but should provide an engineer with enough to build a Minimum Viable Product (MVP).]]></summary></entry></feed>
