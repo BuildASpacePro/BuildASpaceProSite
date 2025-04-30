@@ -5,17 +5,9 @@ date: 2025-04-26 12:00:00 +0000
 categories: chain, space, ground
 ---
 
-In building a space program (or at least simulating one), it's important to link the whole chain. Implementing this is difficult, because it's multi-disciplinary and is usually completed by lots of people (who are experts in their respective fields). To illustrate this, I'll use an example:
-
-Imagine you want to exchange data between your satellite and ground. If we look at the most basic link required to make this happen, it'll look something like:
-Mission Control software > Ground Station network > RF modem > amplifier > Ground station antenna > through the atmosphere > satellite antenna > Low Noise Amplifier > RF modem > satellite On-board computer.
-If you take out one of those items, the chain isn't complete and the objective left unachieved. It's the same in building a whole space program - often if you leave out one link in the chain, then it can result in mission failure (often why redundancy/backups are hardline requirements). Parabolically, no matter how much previous chains are strengthened, it won't increase the strength of the weakest link or the overall chain. 
-
-This is one of the reasons why 
-
 To illustrate the point I'm going to make, I'm going to use an analogy. 
 Imagine a metal chain, built by interleaving individual links together and able to tether two things together. No matter how strong previous links in the chain are - it's only as strong as the weakest link. In other words, strengthening links two and three won't improve the strength of link 4, which might be weakened from corrosion or the elements. This determines the tensile stress of the chain. 
 
 In the same way, a space program is only as strong as the weakest element. Imagine the most basic chain required to send data to a satellite: Mission Control software > Ground Station network > RF modem > amplifier > Ground station antenna > through the atmosphere > satellite antenna > Low Noise Amplifier > RF modem > satellite On-board Computer (OBC). This kind of chain may look different depending on architecture or implementation, but the point remains - if you remove the RF modem, then no data gets to the satellite. Or if the link budget doesn't have enough margin, then the satellite won't pick up the data through the noise. Strengthening the ground station amplifier won't help if the satellite OBC keeps failing. 
 
-This is often why space programs include redundancy within system designs, so that even if one part of the link in the chain fails, another can take it's place. 
+This is often why space programs include redundancy within system designs, so that even if one part of the link in the chain fails, another can take it's place. This is also why teams are multi-disciplinary and not homogenous - no amount of software engineers could replace an expert RF engineer. It takes different skillsets and knowledge bases to build and support the kind of systems that make a space program function. 

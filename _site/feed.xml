@@ -1,4 +1,216 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-16T17:07:14+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">1. Packets</title><link href="http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets.html" rel="alternate" type="text/html" title="1. Packets" /><published>2025-04-15T13:00:00+01:00</published><updated>2025-04-15T13:00:00+01:00</updated><id>http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets</id><content type="html" xml:base="http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets.html"><![CDATA[<p>When I started as an aerospace engineer, I didn’t realise that packets <strong>dominate</strong> the digital world. From your smartphone, Wi-Fi router, computer, and smart devices – all these machines use digital ‘packets’ of data to communicate with other machines in a network. It didn’t help that when I began work, I didn’t even know what packets looked like – despite using them every day!</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-30T21:01:50+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Build A Space Programme</title><subtitle>Build A Space Pro - things I wish I knew when I first wanted to become an aoerspace engineer</subtitle><entry><title type="html">Linking the whole chain</title><link href="http://localhost:4000/chain,/space,/ground/2025/04/26/chain.html" rel="alternate" type="text/html" title="Linking the whole chain" /><published>2025-04-26T13:00:00+01:00</published><updated>2025-04-26T13:00:00+01:00</updated><id>http://localhost:4000/chain,/space,/ground/2025/04/26/chain</id><content type="html" xml:base="http://localhost:4000/chain,/space,/ground/2025/04/26/chain.html"><![CDATA[<p>To illustrate the point I’m going to make, I’m going to use an analogy. 
+Imagine a metal chain, built by interleaving individual links together and able to tether two things together. No matter how strong previous links in the chain are - it’s only as strong as the weakest link. In other words, strengthening links two and three won’t improve the strength of link 4, which might be weakened from corrosion or the elements. This determines the tensile stress of the chain.</p>
+
+<p>In the same way, a space program is only as strong as the weakest element. Imagine the most basic chain required to send data to a satellite: Mission Control software &gt; Ground Station network &gt; RF modem &gt; amplifier &gt; Ground station antenna &gt; through the atmosphere &gt; satellite antenna &gt; Low Noise Amplifier &gt; RF modem &gt; satellite On-board Computer (OBC). This kind of chain may look different depending on architecture or implementation, but the point remains - if you remove the RF modem, then no data gets to the satellite. Or if the link budget doesn’t have enough margin, then the satellite won’t pick up the data through the noise. Strengthening the ground station amplifier won’t help if the satellite OBC keeps failing.</p>
+
+<p>This is often why space programs include redundancy within system designs, so that even if one part of the link in the chain fails, another can take it’s place. This is also why teams are multi-disciplinary and not homogenous - no amount of software engineers could replace an expert RF engineer. It takes different skillsets and knowledge bases to build and support the kind of systems that make a space program function.</p>]]></content><author><name></name></author><category term="chain," /><category term="space," /><category term="ground" /><summary type="html"><![CDATA[To illustrate the point I’m going to make, I’m going to use an analogy. Imagine a metal chain, built by interleaving individual links together and able to tether two things together. No matter how strong previous links in the chain are - it’s only as strong as the weakest link. In other words, strengthening links two and three won’t improve the strength of link 4, which might be weakened from corrosion or the elements. This determines the tensile stress of the chain.]]></summary></entry><entry><title type="html">Introduction to GNU Radio</title><link href="http://localhost:4000/tools/gnuradio/2025/04/25/gnuradio.html" rel="alternate" type="text/html" title="Introduction to GNU Radio" /><published>2025-04-25T13:00:00+01:00</published><updated>2025-04-25T13:00:00+01:00</updated><id>http://localhost:4000/tools/gnuradio/2025/04/25/gnuradio</id><content type="html" xml:base="http://localhost:4000/tools/gnuradio/2025/04/25/gnuradio.html"><![CDATA[<p>GNU Radio is an open-source toolkit for building software-defined radios.</p>
+
+<h3 id="installation">Installation</h3>
+
+<ol>
+  <li>Install GNU Radio using your package manager:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>gnuradio
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="basic-tutorial">Basic Tutorial</h3>
+
+<ol>
+  <li>Open GNU Radio Companion and create a new flowgraph.</li>
+  <li>Add blocks for signal processing and connect them.</li>
+  <li>Run the flowgraph to process signals.</li>
+</ol>
+
+<p>GNU Radio is essential for developing communication systems for spacecraft.</p>]]></content><author><name></name></author><category term="tools" /><category term="gnuradio" /><summary type="html"><![CDATA[GNU Radio is an open-source toolkit for building software-defined radios.]]></summary></entry><entry><title type="html">Using Python Skyfield for Orbital Calculations</title><link href="http://localhost:4000/tools/python/skyfield/2025/04/24/python-skyfield.html" rel="alternate" type="text/html" title="Using Python Skyfield for Orbital Calculations" /><published>2025-04-24T13:00:00+01:00</published><updated>2025-04-24T13:00:00+01:00</updated><id>http://localhost:4000/tools/python/skyfield/2025/04/24/python-skyfield</id><content type="html" xml:base="http://localhost:4000/tools/python/skyfield/2025/04/24/python-skyfield.html"><![CDATA[<p>Skyfield is a Python library for precise orbital calculations.</p>
+
+<h3 id="installation">Installation</h3>
+
+<ol>
+  <li>Install Skyfield using pip:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>skyfield
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="basic-tutorial">Basic Tutorial</h3>
+
+<ol>
+  <li>Import Skyfield and load ephemeris data:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">skyfield.api</span> <span class="kn">import</span> <span class="n">load</span>
+<span class="n">planets</span> <span class="o">=</span> <span class="nf">load</span><span class="p">(</span><span class="sh">'</span><span class="s">de421.bsp</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">earth</span> <span class="o">=</span> <span class="n">planets</span><span class="p">[</span><span class="sh">'</span><span class="s">earth</span><span class="sh">'</span><span class="p">]</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Calculate satellite positions and visualize orbits.</li>
+</ol>
+
+<p>Skyfield is ideal for accurate orbital mechanics calculations.</p>]]></content><author><name></name></author><category term="tools" /><category term="python" /><category term="skyfield" /><summary type="html"><![CDATA[Skyfield is a Python library for precise orbital calculations.]]></summary></entry><entry><title type="html">3. Procedures</title><link href="http://localhost:4000/tools/openc3/2025/04/23/3-Procedures.html" rel="alternate" type="text/html" title="3. Procedures" /><published>2025-04-23T13:00:00+01:00</published><updated>2025-04-23T13:00:00+01:00</updated><id>http://localhost:4000/tools/openc3/2025/04/23/3-Procedures</id><content type="html" xml:base="http://localhost:4000/tools/openc3/2025/04/23/3-Procedures.html"><![CDATA[<p>In this article, we’ll explore the importance of procedures in spacecraft operations and provide an example procedure template.</p>
+
+<hr />
+
+<h3 id="the-importance-of-procedures-in-spacecraft-operations">The Importance of Procedures in Spacecraft Operations</h3>
+
+<p>Spacecraft operations are complex and require precise execution of tasks to ensure mission success. Procedures provide a structured approach to performing these tasks, reducing the likelihood of human error. By following well-documented procedures, operators can:</p>
+<ul>
+  <li>Ensure consistency in operations.</li>
+  <li>Minimize the risk of overlooking critical steps.</li>
+  <li>Facilitate troubleshooting by providing a clear record of actions taken.</li>
+</ul>
+
+<p>In high-stakes environments like spacecraft operations, even a small mistake can lead to mission failure. Procedures act as a safeguard, guiding operators through each step and ensuring that tasks are performed correctly and in the right order.</p>
+
+<hr />
+
+<h3 id="example-procedure-template">Example Procedure Template</h3>
+
+<p>Below is an example procedure template formatted into an 8-row, 3-column table. You can populate it with specific steps and instructions for your spacecraft operations:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Step</strong></th>
+      <th><strong>Action</strong></th>
+      <th><strong>Expected Outcome</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Initialize the system</td>
+      <td>System powers on successfully</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Verify telemetry connection</td>
+      <td>Telemetry data is received</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Configure spacecraft settings</td>
+      <td>Settings are applied correctly</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Send command A</td>
+      <td>Command is acknowledged</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Monitor response</td>
+      <td>Expected telemetry is observed</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Execute maneuver</td>
+      <td>Spacecraft adjusts trajectory</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Log operation details</td>
+      <td>Logs are updated</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Shut down system</td>
+      <td>System powers off safely</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="why-following-procedures-reduces-human-error">Why Following Procedures Reduces Human Error</h3>
+
+<p>Human error is one of the leading causes of failures in spacecraft operations. Procedures help mitigate this risk by:</p>
+<ul>
+  <li>Providing a clear, step-by-step guide that reduces reliance on memory.</li>
+  <li>Standardizing operations, ensuring that all operators follow the same process.</li>
+  <li>Highlighting critical steps that must not be skipped.</li>
+  <li>Allowing for pre-defined contingencies in case of unexpected events.</li>
+</ul>
+
+<p>By adhering to procedures, operators can focus on executing tasks rather than improvising, which is especially important in high-pressure situations.</p>
+
+<hr />]]></content><author><name></name></author><category term="tools" /><category term="openc3" /><summary type="html"><![CDATA[In this article, we’ll explore the importance of procedures in spacecraft operations and provide an example procedure template.]]></summary></entry><entry><title type="html">Exploring NASA’s Cosmographia</title><link href="http://localhost:4000/tools/nasa/cosmographia/2025/04/22/nasa-cosmographia.html" rel="alternate" type="text/html" title="Exploring NASA’s Cosmographia" /><published>2025-04-22T13:00:00+01:00</published><updated>2025-04-22T13:00:00+01:00</updated><id>http://localhost:4000/tools/nasa/cosmographia/2025/04/22/nasa-cosmographia</id><content type="html" xml:base="http://localhost:4000/tools/nasa/cosmographia/2025/04/22/nasa-cosmographia.html"><![CDATA[<p>NASA’s Cosmographia is a 3D visualization tool for space missions.</p>
+
+<h3 id="installation">Installation</h3>
+
+<ol>
+  <li>Download Cosmographia from the <a href="https://cosmographia.com/">NASA website</a>.</li>
+  <li>Install the software on your computer.</li>
+</ol>
+
+<h3 id="basic-tutorial">Basic Tutorial</h3>
+
+<ol>
+  <li>Open Cosmographia and load a mission dataset.</li>
+  <li>Explore the 3D environment to visualize spacecraft trajectories.</li>
+  <li>Use the timeline to simulate mission events.</li>
+</ol>
+
+<p>Cosmographia is an excellent tool for visualizing complex space missions.</p>]]></content><author><name></name></author><category term="tools" /><category term="nasa" /><category term="cosmographia" /><summary type="html"><![CDATA[NASA’s Cosmographia is a 3D visualization tool for space missions.]]></summary></entry><entry><title type="html">Introduction to ANSYS STK</title><link href="http://localhost:4000/tools/ansys/stk/2025/04/21/ansys-stk.html" rel="alternate" type="text/html" title="Introduction to ANSYS STK" /><published>2025-04-21T13:00:00+01:00</published><updated>2025-04-21T13:00:00+01:00</updated><id>http://localhost:4000/tools/ansys/stk/2025/04/21/ansys-stk</id><content type="html" xml:base="http://localhost:4000/tools/ansys/stk/2025/04/21/ansys-stk.html"><![CDATA[<p>ANSYS STK (Systems Tool Kit) is a powerful tool for modeling and analyzing space missions.</p>
+
+<h3 id="installation">Installation</h3>
+
+<ol>
+  <li>Download STK from the <a href="https://www.ansys.com/">ANSYS website</a>.</li>
+  <li>Follow the installation guide provided.</li>
+</ol>
+
+<h3 id="basic-tutorial">Basic Tutorial</h3>
+
+<ol>
+  <li>Create a new scenario in STK.</li>
+  <li>Add a satellite and define its orbit parameters.</li>
+  <li>Use the 3D visualization to analyze the satellite’s trajectory.</li>
+</ol>
+
+<p>STK is widely used for mission planning and analysis in the aerospace industry.</p>]]></content><author><name></name></author><category term="tools" /><category term="ansys" /><category term="stk" /><summary type="html"><![CDATA[ANSYS STK (Systems Tool Kit) is a powerful tool for modeling and analyzing space missions.]]></summary></entry><entry><title type="html">Getting Started with Visual Studio Code</title><link href="http://localhost:4000/tools/vscode/2025/04/20/visual-studio-code.html" rel="alternate" type="text/html" title="Getting Started with Visual Studio Code" /><published>2025-04-20T13:00:00+01:00</published><updated>2025-04-20T13:00:00+01:00</updated><id>http://localhost:4000/tools/vscode/2025/04/20/visual-studio-code</id><content type="html" xml:base="http://localhost:4000/tools/vscode/2025/04/20/visual-studio-code.html"><![CDATA[<p>Visual Studio Code (VS Code) is a lightweight, powerful code editor with support for extensions and debugging.</p>
+
+<h3 id="why-vs-code-is-a-great-ide">Why VS Code is a Great IDE</h3>
+
+<p>VS Code is an indispensable tool for writing code used in satellites, ground stations, and managing space assets. Its customizability, support for multiple programming languages, and powerful debugging tools make it ideal for developing reliable and efficient software for critical space operations. Features like IntelliSense and integrated terminals streamline workflows, ensuring precision and productivity in space-related projects.</p>
+
+<h3 id="installation">Installation</h3>
+
+<ol>
+  <li>Visit the <a href="https://code.visualstudio.com/">VS Code website</a>.</li>
+  <li>Download the installer for your operating system.</li>
+  <li>Follow the installation instructions.</li>
+</ol>
+
+<h3 id="basic-tutorial">Basic Tutorial</h3>
+
+<ol>
+  <li>Open VS Code and create a new file (<code class="language-plaintext highlighter-rouge">File &gt; New File</code>).</li>
+  <li>Install extensions like Python or Markdown support from the Extensions Marketplace.</li>
+  <li>Use the integrated terminal (<code class="language-plaintext highlighter-rouge">Ctrl + ~</code>) to run commands.</li>
+</ol>
+
+<h3 id="using-git-in-vs-code">Using Git in VS Code</h3>
+
+<ol>
+  <li>Open the Source Control view (<code class="language-plaintext highlighter-rouge">Ctrl + Shift + G</code>).</li>
+  <li>Stage changes by clicking the <code class="language-plaintext highlighter-rouge">+</code> icon next to modified files.</li>
+  <li>Commit changes with a message in the input box and press <code class="language-plaintext highlighter-rouge">Ctrl + Enter</code>. Committing saves a snapshot of your changes locally.</li>
+  <li>Push changes to a remote repository using the <code class="language-plaintext highlighter-rouge">...</code> menu or <code class="language-plaintext highlighter-rouge">Ctrl + Shift + P</code> &gt; <code class="language-plaintext highlighter-rouge">Git: Push</code>. Pushing uploads your committed changes to a shared repository, making them accessible to collaborators.</li>
+  <li>Pull updates from the remote repository using <code class="language-plaintext highlighter-rouge">Git: Pull</code>. Pulling fetches the latest changes from the shared repository and integrates them into your local codebase.</li>
+</ol>
+
+<p>Version control is essential for tracking changes, collaborating with teams, and ensuring code stability during deployment, especially in high-stakes environments like space systems.</p>
+
+<h3 id="using-copilot-responsibly">Using Copilot Responsibly</h3>
+
+<p>GitHub Copilot can assist in writing and modifying code by suggesting context-aware snippets. To enable Copilot in VS Code:</p>
+<ol>
+  <li>Install the GitHub Copilot extension from the Extensions Marketplace.</li>
+  <li>Sign in with your GitHub account and activate Copilot in the settings.</li>
+</ol>
+
+<p>Always review and test AI-generated code to ensure it meets your requirements. A safe workflow is human (prompt) &gt; AI (suggestion) &gt; human (validation), avoiding direct copying to maintain quality and accountability.</p>
+
+<p>VS Code is an essential tool for writing and debugging code for spacecraft systems.</p>]]></content><author><name></name></author><category term="tools" /><category term="vscode" /><summary type="html"><![CDATA[Visual Studio Code (VS Code) is a lightweight, powerful code editor with support for extensions and debugging.]]></summary></entry><entry><title type="html">1. Packets</title><link href="http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets.html" rel="alternate" type="text/html" title="1. Packets" /><published>2025-04-15T13:00:00+01:00</published><updated>2025-04-15T13:00:00+01:00</updated><id>http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets</id><content type="html" xml:base="http://localhost:4000/packets,/networking,/ip/2025/04/15/1-Packets.html"><![CDATA[<p>When I started as an aerospace engineer, I didn’t realise that packets <strong>dominate</strong> the digital world. From your smartphone, Wi-Fi router, computer, and smart devices – all these machines use digital ‘packets’ of data to communicate with other machines in a network. It didn’t help that when I began work, I didn’t even know what packets looked like – despite using them every day!</p>
 
 <p>We all know that computers talk in binary (1s and 0s) using formatted units of data arranged into packets. These packets are stored in <strong>frames</strong>, which are the basic units of communication at the data link layer. Frames encapsulate packets with additional information, such as source and destination addresses, and can be analyzed using tools like Wireshark. Wireshark allows you to see how packets are stored in frames and how they travel across a network.</p>
 
@@ -47,7 +259,17 @@ sudo apt install wireshark -y</span>
 
 <hr />
 
-<p>Understanding packets is fundamental to networking, whether you’re troubleshooting a local network or working on cutting-edge satellite systems. Tools like Wireshark make it easier to visualize and analyze these packets, helping engineers and enthusiasts alike to dive deeper into the world of digital communication.</p>]]></content><author><name></name></author><category term="packets," /><category term="networking," /><category term="IP" /><summary type="html"><![CDATA[When I started as an aerospace engineer, I didn’t realise that packets dominate the digital world. From your smartphone, Wi-Fi router, computer, and smart devices – all these machines use digital ‘packets’ of data to communicate with other machines in a network. It didn’t help that when I began work, I didn’t even know what packets looked like – despite using them every day!]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-04-14T20:39:44+01:00</published><updated>2025-04-14T20:39:44+01:00</updated><id>http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<p>Understanding packets is fundamental to networking, whether you’re troubleshooting a local network or working on cutting-edge satellite systems. Tools like Wireshark make it easier to visualize and analyze these packets, helping engineers and enthusiasts alike to dive deeper into the world of digital communication.</p>]]></content><author><name></name></author><category term="packets," /><category term="networking," /><category term="IP" /><summary type="html"><![CDATA[When I started as an aerospace engineer, I didn’t realise that packets dominate the digital world. From your smartphone, Wi-Fi router, computer, and smart devices – all these machines use digital ‘packets’ of data to communicate with other machines in a network. It didn’t help that when I began work, I didn’t even know what packets looked like – despite using them every day!]]></summary></entry><entry><title type="html">1. Tools that every space engineer needs</title><link href="http://localhost:4000/site/tools,/engineering,/space/2025/04/15/1-Tools-Every-Engineer-Needs.html" rel="alternate" type="text/html" title="1. Tools that every space engineer needs" /><published>2025-04-15T13:00:00+01:00</published><updated>2025-04-15T13:00:00+01:00</updated><id>http://localhost:4000/site/tools,/engineering,/space/2025/04/15/1-Tools-Every-Engineer-Needs</id><content type="html" xml:base="http://localhost:4000/site/tools,/engineering,/space/2025/04/15/1-Tools-Every-Engineer-Needs.html"><![CDATA[<p>In this post, I’m going to lay out all the tools I wish I knew about when I was an engineer fresh at university.</p>
+
+<h3 id="installing-wireshark-on-ubuntu">Installing Wireshark on Ubuntu</h3>
+
+<p>To install Wireshark on Ubuntu, open your terminal and run the following commands:</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="code"><pre><span class="go">sudo apt update
+sudo apt install wireshark -y</span>
+</pre></td></tr></tbody></table></code></pre></figure>]]></content><author><name></name></author><category term="site" /><category term="tools," /><category term="engineering," /><category term="space" /><summary type="html"><![CDATA[In this post, I’m going to lay out all the tools I wish I knew about when I was an engineer fresh at university.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-04-14T20:39:44+01:00</published><updated>2025-04-14T20:39:44+01:00</updated><id>http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2025/04/14/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
@@ -63,14 +285,4 @@ sudo apt install wireshark -y</span>
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">First Attempt</title><link href="http://localhost:4000/blog/attempt/2025/04/13/1-First-Attempt.html" rel="alternate" type="text/html" title="First Attempt" /><published>2025-04-13T13:00:00+01:00</published><updated>2025-04-13T13:00:00+01:00</updated><id>http://localhost:4000/blog/attempt/2025/04/13/1-First-Attempt</id><content type="html" xml:base="http://localhost:4000/blog/attempt/2025/04/13/1-First-Attempt.html"><![CDATA[<p>In this post, we explore our first attempt at creating a blog post using Jekyll. As part of this, let’s include a quick guide on how to install Wireshark on Ubuntu.</p>
-
-<h3 id="installing-wireshark-on-ubuntu">Installing Wireshark on Ubuntu</h3>
-
-<p>To install Wireshark on Ubuntu, open your terminal and run the following commands:</p>
-
-<figure class="highlight"><pre><code class="language-console" data-lang="console"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="code"><pre><span class="go">sudo apt update
-sudo apt install wireshark -y</span>
-</pre></td></tr></tbody></table></code></pre></figure>]]></content><author><name></name></author><category term="blog" /><category term="attempt" /><summary type="html"><![CDATA[In this post, we explore our first attempt at creating a blog post using Jekyll. As part of this, let’s include a quick guide on how to install Wireshark on Ubuntu.]]></summary></entry></feed>
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
