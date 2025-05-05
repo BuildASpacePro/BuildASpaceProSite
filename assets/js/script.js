@@ -31,11 +31,8 @@
                 .hexPolygonResolution(3) // Resolution of hexagons
                 .hexPolygonMargin(0.3) // Margin between hexagons
                 .hexPolygonUseDots(true) // Render hexagons as dots
-                .hexPolygonColor(() => `#${Math.round(Math.random() * Math.pow(2, 24)).toString(16).padStart(6, '0')}`) // Random color
-                .hexPolygonLabel(({ properties: d }) => `
-                    <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
-                    Population: <i>${d.POP_EST}</i>
-                `); // Tooltip for hexagons
+                .hexPolygonColor(() => '#ffffff') // Set all dots to white
+                .hexPolygonLabel(() => null); // Disable labels
         })
         .catch(err => {
             console.error("Failed to load GeoJSON data:", err);

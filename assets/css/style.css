@@ -1,9 +1,9 @@
 /* ...existing code... */
 
 #globe-container {
-    width: 100%; /* Make it responsive */
-    max-width: 800px; /* Constrain the maximum width */
-    height: 500px; /* Set a fixed height */
-    margin: 0 auto; /* Center the container */
+    width: 80%; /* Reduce width to fit the page */
+    max-width: 600px; /* Constrain the maximum width */
+    height: 400px; /* Adjust height to make it smaller */
+    margin: 0 auto; /* Center the container horizontally */
     position: relative; /* Ensure proper positioning */
 }
