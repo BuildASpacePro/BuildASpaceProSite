@@ -13,14 +13,14 @@ const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(
     75, // Field of View
-    window.innerWidth / window.innerHeight, // Aspect Ratio
+    container.clientWidth / container.clientHeight, // Aspect Ratio matches container
     0.1, // Near clipping plane
     1000 // Far clipping plane
 );
 camera.position.z = 5; // Move camera back so we can see the globe
 
 const renderer = new THREE.WebGLRenderer({ antialias: true }); // Enable anti-aliasing for smoother points
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(container.clientWidth, container.clientHeight); // Match the container's dimensions
 renderer.setPixelRatio(window.devicePixelRatio || 1); // Ensure pixel ratio fallback for older browsers
 container.appendChild(renderer.domElement);
 
@@ -42,6 +42,7 @@ const material = new THREE.PointsMaterial({
 
 // Create the Points object (instead of a Mesh)
 const earthPoints = new THREE.Points(geometry, material);
+// earthPoints.rotation.z = THREE.MathUtils.degToRad(23.45); // Tilt the globe by 23.45 degrees
 scene.add(earthPoints);
 
 // --- Lighting (Optional - Not very effective for PointsMaterial) ---
@@ -57,7 +58,7 @@ function animate() {
     requestAnimationFrame(animate); // Request the next frame
 
     // Rotate the points object
-    earthPoints.rotation.y += 0.002; // Adjust speed of rotation here
+    earthPoints.rotation.y += 0.001; // Slower rotation speed
     // earthPoints.rotation.x += 0.0005; // Optional: Tilt rotation
 
     // Render the scene from the perspective of the camera
@@ -66,13 +67,12 @@ function animate() {
 
 // --- Handle Window Resizing ---
 function onWindowResize() {
-    // Update camera aspect ratio
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
+    // Update renderer size to match the container
+    renderer.setSize(container.clientWidth, container.clientHeight);
 
-    // Update renderer size
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setPixelRatio(window.devicePixelRatio); // Re-apply pixel ratio
+    // Update camera aspect ratio
+    camera.aspect = container.clientWidth / container.clientHeight;
+    camera.updateProjectionMatrix();
 }
 
 window.addEventListener('resize', onWindowResize);
