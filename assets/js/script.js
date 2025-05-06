@@ -1,5 +1,5 @@
 // Ensure the Globe library is imported
-// <script src="./path/to/globe.min.js"></script> should be included in your HTML file
+// <script src="./assets/js/globe-gl/index.js"></script> should be included in your HTML file
 
 // Ensure only one instance of Three.js is loaded
 // Check your HTML file to ensure Three.js is not imported multiple times
@@ -28,7 +28,7 @@
             const globe = new Globe(container) // Ensure Globe is properly loaded
                 .globeImageUrl('./assets/images/earth-dark.jpg') // Use locally hosted image
                 .hexPolygonsData(countries.features) // Use GeoJSON features for hexagons
-                .hexPolygonResolution(3) // Resolution of hexagons
+                .hexPolygonResolution(4) // Resolution of hexagons
                 .hexPolygonMargin(0.3) // Margin between hexagons
                 .hexPolygonUseDots(true) // Render hexagons as dots
                 .hexPolygonColor(() => '#ffffff') // Set all dots to white
