@@ -4,4 +4,7 @@ title: Posts
 permalink: /blog/
 ---
 
-Here are some of the posts I've written.
+![Saint George Basin, Australia](/assets/images/Saint_George_Basin_Australia.jpg)
+
+<div style="text-align: center;"><em>Image credit: ESA 2010 from Landsat satellite</em></div>
+

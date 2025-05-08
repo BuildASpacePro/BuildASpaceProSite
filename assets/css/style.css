@@ -1,9 +1,3 @@
 /* ...existing code... */
 
-#globe-container {
-    width: 80%; /* Reduce width to fit the page */
-    max-width: 600px; /* Constrain the maximum width */
-    height: 400px; /* Adjust height to make it smaller */
-    margin: 0 auto; /* Center the container horizontally */
-    position: relative; /* Ensure proper positioning */
-}
+/* Removed #globe-container styles */
