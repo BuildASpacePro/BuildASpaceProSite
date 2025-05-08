@@ -1,6 +1,11 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+title: Home
 ---
+
+# build. test. fly.
+
+
+![Mississippi River Delta](./assets/images/Mississippi_River_Delta.jpg)
+
+<div style="text-align: center;"><em>Image credit: ESA 2011 from Landsat satellite</em></div>
