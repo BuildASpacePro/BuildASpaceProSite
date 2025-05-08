@@ -2,11 +2,6 @@
 layout: home
 ---
 
-<!-- Add a container for the globe -->
-<div id="globe-container" style="width: 100%; height: 500px;"></div>
+![Mississippi River Delta](./assets/images/Mississippi_River_Delta.jpg)
 
-<!-- Load Three.js library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-<!-- Include the script.js file -->
-<script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+*Image credit: ESA 2011 from Landsat satellite*
