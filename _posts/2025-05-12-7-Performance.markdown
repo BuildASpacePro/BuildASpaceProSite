@@ -23,7 +23,7 @@ The Apollo 11 guidance computer had just 2048 words of RAM (16-bit) and had less
 
 ## iPhone Storage
 
-![My iPhone storage](/assets/images/iPhoneStorage.jpg)
+![My iPhone storage](/assets/images/iPhoneStorage.jpeg)
 
 <div style="text-align: center;"><em>Image credit: Authors</em></div>
 
