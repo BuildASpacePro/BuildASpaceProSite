@@ -34,4 +34,88 @@ For this I'm going to use the [Criterion crate in Rust](https://docs.rs/criterio
 
 `cargo add criterion`
 
-As an example, I've got code that will calculate every prime number between 1 to 10,000. One algorithm discovers primes using division (brute force) whereas the other - ([Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) disregards numbers by knowing their factors (i.e. since 2 is a prime, every multiple of 2 cannot be). 
+As an example, I've got code that will calculate every prime number between 1 to 10,000. One algorithm discovers primes using division (brute force) whereas the other - [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) disregards numbers by knowing their factors (i.e. since 2 is a prime, every multiple of 2 cannot be). 
+
+I'll provide [a link to the repo I've created called PRIME BENCHMARK](https://github.com/BuildASpacePro/PRIME_BENCHMARK) but will also paste elements of the code below.
+
+## Setting Up the Benchmark
+
+```rust
+pub fn prime_benchmark(c: &mut Criterion) {
+    let mut group = c.benchmark_group("Prime Number Algorithms");
+    
+    // Test with different input sizes
+    for size in [100, 1000, 5000, 10000].iter() {
+        group.bench_with_input(BenchmarkId::new("Sieve of Eratosthenes", size), size, |b, &size| {
+            b.iter(|| sieve_of_eratosthenes(black_box(size)));
+        });
+        
+        group.bench_with_input(BenchmarkId::new("Trial Division", size), size, |b, &size| {
+            b.iter(|| trial_division(black_box(size)));
+        });
+    }
+    
+    group.finish();
+}
+```
+
+Criterion makes it easy to:
+- Group related benchmarks with `benchmark_group`
+- Test multiple input sizes to observe algorithm scaling
+- Use `bench_with_input` to parameterize benchmarks
+- Use `black_box` to prevent compiler optimization
+
+## Memory Usage Benchmarking
+
+```rust
+pub fn memory_benchmark(c: &mut Criterion) {
+    let mut group = c.benchmark_group("Memory Usage Comparison");
+    
+    // Create a CSV file to store memory metrics
+    let mut memory_csv = File::create("memory_metrics.csv").unwrap();
+    writeln!(memory_csv, "algorithm,size,peak_rss_kb,current_rss_kb,virtual_mem_bytes,virtual_mem_bytes,execution_time_ns").unwrap();
+    
+    for size in [5000, 10000, 15000, 20000, 25000, 30000, 35000, 40000, 45000, 50000].iter() {
+        // Warm-up run
+        let _ = sieve_of_eratosthenes_monitored(*size);
+        
+        // Now do the actual measurement
+        group.bench_function(BenchmarkId::new("Sieve Memory", size), |b| {
+            b.iter_with_setup(
+                || {},
+                |_| {
+                    let (_, metrics) = sieve_of_eratosthenes_monitored(black_box(*size));
+                    
+                    // Log metrics to CSV
+                    writeln!(
+                        memory_csv, 
+                        "sieve,{},{},{},{},{},{}",
+                        size,
+                        metrics.peak_rss_kb,
+                        metrics.current_rss_kb,
+                        metrics.virtual_mem_bytes,
+                        metrics.virtual_mem_bytes,
+                        metrics.execution_time.as_nanos()
+                    ).unwrap();
+                    
+                    metrics
+                }
+            )
+        });
+    }
+}
+```
+## Algorithmic Differences
+
+The Sieve of Eratosthenes creates a boolean array of size n+1, meaning its memory usage scales linearly with input size. Trial division builds a vector of primes that grows more slowly (approximately n/ln(n) elements), but performs many more comparisons.
+
+Criterion helps quantify these tradeoffs precisely, allowing developers to make informed decisions based on specific constraints.
+
+![Comparison of algorithm efficiency](/assets/images/algograph.png)
+
+<div style="text-align: center;"><em>Comparison of algorithm efficency</em></div>
+
+As shown in the graph above, for more prime numbers that are searched for, the time taken will increase for both algorithms - but since the Sieve of Eratosthenes (an algorithm over 2000 years old!) is more efficient, it takes much less time. 
+
+## Conclusion
+Performance engineering isn't just about making hardware and software run faster, it's about creating more efficient technology for the world to use. At scale, deployment of these technologies will have profound effects on society, the economy and the way people live their lives. One can only hope that the future is free from the bloatware that seems to forever plague the world. 
