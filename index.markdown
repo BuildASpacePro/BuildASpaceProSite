@@ -1,9 +1,7 @@
 ---
 layout: home
-title: Home
+title: build. test. fly.
 ---
-
-# build. test. fly.
 
 ![Mississippi River Delta](./assets/images/Mississippi_River_Delta.jpg)
 

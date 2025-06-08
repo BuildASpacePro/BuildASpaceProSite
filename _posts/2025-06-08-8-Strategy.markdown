@@ -1,0 +1,51 @@
+---
+layout: post
+title: "8. Strategy"
+date: 2025-06-08 12:00:00 +0000
+categories: Strategy, goals, performance
+---
+
+# Strategy
+
+From the Greek word "στρατηγία", which can be separated out into στρατ- the root for "army" and ηγία- "to lead". Not just a word used for the military, strategy carries importance in how we encounter the modern world. Good strategy can bring us good fortune. Bad strategy can lose it.
+
+Strategy is not just planning - strategy acknowledges that the future is uncertain and that plans should be responsive to new surfacing problems. In a world where competitive advantage has a shrinking half-life as the rate of change increases, it's more important than ever to have a good strategy.
+
+In Richard Rumelt's book Good Strategy/Bad Strategy (2012), he covers the three essential elements of any strategy:
+
+## Diagnosis
+To solve a problem, you must first understand it. Without understanding what you're trying to solve, you can't properly solve it - which is why it's so important to correctly diagnose the issue. 
+
+In aerospace, diagnosis means understanding fundamental constraints: orbital mechanics, power budgets, thermal loads, radiation environments, and launch vehicle capabilities. SpaceX's diagnosis of the launch industry identified cost as the primary barrier - leading to reusable rockets. Similarly, Planet Labs diagnosed Earth observation as a data latency problem, not an image quality problem, spawning their CubeSat constellation approach.
+
+## Guiding principles
+Once the challenge is understood, guiding principles establish the logic that will drive decisions. These aren't vague mission statements but specific approaches that create focus and eliminate alternatives.
+
+Jeff Bezos's "disagree and commit" principle accelerates decision-making when perfect information is unavailable. In aerospace, weight is often the ultimate constraint - every gram matters. This principle drives design decisions: composite materials over metals, integrated systems over modular ones, and software solutions over hardware when possible.
+
+## Coherent action
+This final step turns concept into reality. Coherent actions are specific tasks, resource allocations, and organizational changes that align with your guiding principles. They must reinforce each other rather than work at cross-purposes.
+
+Tesla's coherent action combined vertical integration (battery manufacturing), software development (over-the-air updates), and charging infrastructure (Supercharger network). Each element amplified the others, creating a defensible moat.
+
+### Example: NewSpace Strategy Framework
+
+**Diagnosis:** Traditional aerospace has 10-15 year development cycles, making it unresponsive to rapidly evolving customer needs and technological capabilities.
+
+**Guiding Principles:** 
+- Iterate rapidly with hardware-in-the-loop testing
+- Leverage commercial off-the-shelf (COTS) components where possible
+- Design for manufacturability from day one
+
+**Coherent Actions:**
+- Implement CI/CD pipelines for embedded software
+- Establish rapid prototyping facilities with 3D printing and CNC machining
+- Partner with established launch providers rather than developing proprietary launch capabilities
+- Hire talent from tech companies, not just traditional aerospace
+
+## The Performance Connection
+Strategy and performance are inseparable. Every strategic decision has computational and operational implications. Choose Python for rapid prototyping but Rust for flight software. Optimize ground station protocols to minimize latency. Design constellation architectures that maximize revisit times while minimizing orbital debris risk.
+
+The companies that win understand this connection between strategic thinking and technical execution. They diagnose problems correctly, establish principles that drive focus, and execute with coherent actions that compound their advantages.
+
+Poor strategy in aerospace isn't just inefficient - it's mission-critical failure. A chain is only as strong as its weakest link and weak strategy creates the weakest links of all.
