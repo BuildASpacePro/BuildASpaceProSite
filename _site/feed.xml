@@ -1,9 +1,164 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-09T21:50:22+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">buildaspacepro</title><subtitle>Build A Space Pro - the minimal space programme</subtitle><entry><title type="html">5. Linking the whole chain</title><link href="http://localhost:4000/blog/chain,/space,/ground/5-chain/" rel="alternate" type="text/html" title="5. Linking the whole chain" /><published>2025-04-26T13:00:00+01:00</published><updated>2025-04-26T13:00:00+01:00</updated><id>http://localhost:4000/blog/chain,/space,/ground/5-chain</id><content type="html" xml:base="http://localhost:4000/blog/chain,/space,/ground/5-chain/"><![CDATA[<p>To illustrate the point I’m going to make, I’m going to use an analogy. 
-Imagine a metal chain, built by interleaving individual links together and able to tether two things together. No matter how strong previous links in the chain are - it’s only as strong as the weakest link. In other words, strengthening links two and three won’t improve the strength of link 4, which might be weakened from corrosion or the elements. This determines the tensile stress of the chain.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-25T22:10:30+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">buildaspacepro</title><subtitle>Build A Space Pro - the minimal space programme</subtitle><entry><title type="html">8. Strategy</title><link href="http://localhost:4000/blog/strategy,/goals,/performance/8-Strategy/" rel="alternate" type="text/html" title="8. Strategy" /><published>2025-06-08T13:00:00+01:00</published><updated>2025-06-08T13:00:00+01:00</updated><id>http://localhost:4000/blog/strategy,/goals,/performance/8-Strategy</id><content type="html" xml:base="http://localhost:4000/blog/strategy,/goals,/performance/8-Strategy/"><![CDATA[<h1 id="strategy">Strategy</h1>
 
-<p>In the same way, a space program is only as strong as the weakest element. Imagine the most basic chain required to send data to a satellite: Mission Control software &gt; Ground Station network &gt; RF modem &gt; amplifier &gt; Ground station antenna &gt; through the atmosphere &gt; satellite antenna &gt; Low Noise Amplifier &gt; RF modem &gt; satellite On-board Computer (OBC). This kind of chain may look different depending on architecture or implementation, but the point remains - if you remove the RF modem, then no data gets to the satellite. Or if the link budget doesn’t have enough margin, then the satellite won’t pick up the data through the noise. Strengthening the ground station amplifier won’t help if the satellite OBC keeps failing.</p>
+<p>From the Greek word “στρατηγία”, which can be separated out into στρατ- the root for “army” and ηγία- “to lead”. Not just a word used for the military, strategy carries importance in how we encounter the modern world. Good strategy can bring us good fortune. Bad strategy can lose it.</p>
 
-<p>This is often why space programs include redundancy within system designs, so that even if one part of the link in the chain fails, another can take it’s place. This is also why teams are multi-disciplinary and not homogenous - no amount of software engineers could replace an expert RF engineer. It takes different skillsets and knowledge bases to build and support the kind of systems that make a space program function.</p>]]></content><author><name></name></author><category term="chain," /><category term="space," /><category term="ground" /><summary type="html"><![CDATA[To illustrate the point I’m going to make, I’m going to use an analogy. Imagine a metal chain, built by interleaving individual links together and able to tether two things together. No matter how strong previous links in the chain are - it’s only as strong as the weakest link. In other words, strengthening links two and three won’t improve the strength of link 4, which might be weakened from corrosion or the elements. This determines the tensile stress of the chain.]]></summary></entry><entry><title type="html">6. Linux</title><link href="http://localhost:4000/blog/space,/ground,/linux/6-Linux/" rel="alternate" type="text/html" title="6. Linux" /><published>2025-04-26T13:00:00+01:00</published><updated>2025-04-26T13:00:00+01:00</updated><id>http://localhost:4000/blog/space,/ground,/linux/6-Linux</id><content type="html" xml:base="http://localhost:4000/blog/space,/ground,/linux/6-Linux/"><![CDATA[<h1 id="linux">Linux</h1>
+<p>Strategy is not just planning - strategy acknowledges that the future is uncertain and that plans should be responsive to new surfacing problems. In a world where competitive advantage has a shrinking half-life as the rate of change increases, it’s more important than ever to have a good strategy.</p>
+
+<p>In Richard Rumelt’s book Good Strategy/Bad Strategy (2012), he covers the three essential elements of any strategy:</p>
+
+<h2 id="diagnosis">Diagnosis</h2>
+<p>To solve a problem, you must first understand it. Without understanding what you’re trying to solve, you can’t properly solve it - which is why it’s so important to correctly diagnose the issue.</p>
+
+<p>In aerospace, diagnosis means understanding fundamental constraints: orbital mechanics, power budgets, thermal loads, radiation environments, and launch vehicle capabilities. SpaceX’s diagnosis of the launch industry identified cost as the primary barrier - leading to reusable rockets. Similarly, Planet Labs diagnosed Earth observation as a data latency problem, not an image quality problem, spawning their CubeSat constellation approach.</p>
+
+<h2 id="guiding-principles">Guiding principles</h2>
+<p>Once the challenge is understood, guiding principles establish the logic that will drive decisions. These aren’t vague mission statements but specific approaches that create focus and eliminate alternatives.</p>
+
+<p>Jeff Bezos’s “disagree and commit” principle accelerates decision-making when perfect information is unavailable. In aerospace, weight is often the ultimate constraint - every gram matters. This principle drives design decisions: composite materials over metals, integrated systems over modular ones, and software solutions over hardware when possible.</p>
+
+<h2 id="coherent-action">Coherent action</h2>
+<p>This final step turns concept into reality. Coherent actions are specific tasks, resource allocations, and organizational changes that align with your guiding principles. They must reinforce each other rather than work at cross-purposes.</p>
+
+<p>Tesla’s coherent action combined vertical integration (battery manufacturing), software development (over-the-air updates), and charging infrastructure (Supercharger network). Each element amplified the others, creating a defensible moat.</p>
+
+<h3 id="example-newspace-strategy-framework">Example: NewSpace Strategy Framework</h3>
+
+<p><strong>Diagnosis:</strong> Traditional aerospace has 10-15 year development cycles, making it unresponsive to rapidly evolving customer needs and technological capabilities.</p>
+
+<p><strong>Guiding Principles:</strong></p>
+<ul>
+  <li>Iterate rapidly with hardware-in-the-loop testing</li>
+  <li>Leverage commercial off-the-shelf (COTS) components where possible</li>
+  <li>Design for manufacturability from day one</li>
+</ul>
+
+<p><strong>Coherent Actions:</strong></p>
+<ul>
+  <li>Implement CI/CD pipelines for embedded software</li>
+  <li>Establish rapid prototyping facilities with 3D printing and CNC machining</li>
+  <li>Partner with established launch providers rather than developing proprietary launch capabilities</li>
+  <li>Hire talent from tech companies, not just traditional aerospace</li>
+</ul>
+
+<h2 id="the-performance-connection">The Performance Connection</h2>
+<p>Strategy and performance are inseparable. Every strategic decision has computational and operational implications. Choose Python for rapid prototyping but Rust for flight software. Optimize ground station protocols to minimize latency. Design constellation architectures that maximize revisit times while minimizing orbital debris risk.</p>
+
+<p>The companies that win understand this connection between strategic thinking and technical execution. They diagnose problems correctly, establish principles that drive focus, and execute with coherent actions that compound their advantages.</p>
+
+<p>Poor strategy in aerospace isn’t just inefficient - it’s mission-critical failure. A chain is only as strong as its weakest link and weak strategy creates the weakest links of all.</p>]]></content><author><name></name></author><category term="Strategy," /><category term="goals," /><category term="performance" /><summary type="html"><![CDATA[Strategy]]></summary></entry><entry><title type="html">7. Performance</title><link href="http://localhost:4000/blog/linux,/performance,/rust,/efficiency/7-Performance/" rel="alternate" type="text/html" title="7. Performance" /><published>2025-05-12T13:00:00+01:00</published><updated>2025-05-12T13:00:00+01:00</updated><id>http://localhost:4000/blog/linux,/performance,/rust,/efficiency/7-Performance</id><content type="html" xml:base="http://localhost:4000/blog/linux,/performance,/rust,/efficiency/7-Performance/"><![CDATA[<h1 id="performance">Performance</h1>
+<p>Performance engineering is a topic that will forever remain important. We currently live in the information age and are entering the AI age - software is an asset that is low-cost, easy to change (cheaper than bending metal) and effortless to scale/deploy globally. This carries serious implications for the modern world.</p>
+
+<h2 id="example-jpeg--mp3-compression">Example: JPEG &amp; MP3 compression</h2>
+<p>Compression algorithms for JPEG (images) and MP3 (audio) reduce file sizes by orders of magnitude, slashing storage and transmission costs. For instance, streaming an MP3 at 128kbps versus uncompressed WAV at 1.4Mbps saves ~90% of banddiwth, reducing energy use in data centers and networks.</p>
+
+<h2 id="example-internet-browsing">Example: Internet browsing</h2>
+<p>If every major website optimised it’s codebase to save 10KB per page load (assuming 2 trillion page views annually), data savings could reach 20 petabytes - cutting energy use by 200-1000GWh (assuming 0.01-0.05kWh/GB). That’s approximately enough to power a small city for a year!</p>
+
+<p>It’s evident that these small changes in how we design and use software can carry big consequences.</p>
+
+<h2 id="personal-opinion">Personal opinion</h2>
+<p>So much of the software we use today is bloated - containing too many features or too many distractions. The <a href="https://en.wikipedia.org/wiki/Enshittification">2023 word of the year</a> captures well the framework behind which many software products decline in quality over the time.</p>
+
+<p>The Apollo 11 guidance computer had just 2048 words of RAM (16-bit) and had less computing power than any modern calculator and yet was able to take humans to the Moon and back. Simple and functional, this is an example of using dire amounts of memory to achieve a goal - something I think few engineers could do today (myself included)</p>
+
+<h2 id="iphone-storage">iPhone Storage</h2>
+
+<p><img src="/assets/images/iPhoneStorage.jpeg" alt="My iPhone storage" /></p>
+
+<div style="text-align: center;"><em>Image credit: Authors</em></div>
+
+<p>You can see even on my iPhone how much storage is taken up by apps that perform functions as simple as accessing the internet. Barebone apps typically only need UI elements, libraries, frameworks, fonts and network files to function - but today’s apps have bloated far beyond the simple functions a user desires. Analytic SDKs, media processing libraries, cached content and database files now plague these smart devices, performing functions beyond what many normal users might want.</p>
+
+<h1 id="example-prime-numbers-in-rust">Example: Prime numbers in Rust</h1>
+<p>For this I’m going to use the <a href="https://docs.rs/criterion2/latest/criterion/">Criterion crate in Rust</a> which can be added to your project toml using the following command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cargo add criterion</code></p>
+
+<p>As an example, I’ve got code that will calculate every prime number between 1 to 10,000. One algorithm discovers primes using division (brute force) whereas the other - <a href="https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes">Sieve of Eratosthenes</a> disregards numbers by knowing their factors (i.e. since 2 is a prime, every multiple of 2 cannot be).</p>
+
+<p>I’ll provide <a href="https://github.com/BuildASpacePro/PRIME_BENCHMARK">a link to the repo I’ve created called PRIME BENCHMARK</a> but will also paste elements of the code below.</p>
+
+<h2 id="setting-up-the-benchmark">Setting Up the Benchmark</h2>
+
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">pub</span> <span class="k">fn</span> <span class="nf">prime_benchmark</span><span class="p">(</span><span class="n">c</span><span class="p">:</span> <span class="o">&amp;</span><span class="k">mut</span> <span class="n">Criterion</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="k">mut</span> <span class="n">group</span> <span class="o">=</span> <span class="n">c</span><span class="nf">.benchmark_group</span><span class="p">(</span><span class="s">"Prime Number Algorithms"</span><span class="p">);</span>
+    
+    <span class="c1">// Test with different input sizes</span>
+    <span class="k">for</span> <span class="n">size</span> <span class="k">in</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">5000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">]</span><span class="nf">.iter</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">group</span><span class="nf">.bench_with_input</span><span class="p">(</span><span class="nn">BenchmarkId</span><span class="p">::</span><span class="nf">new</span><span class="p">(</span><span class="s">"Sieve of Eratosthenes"</span><span class="p">,</span> <span class="n">size</span><span class="p">),</span> <span class="n">size</span><span class="p">,</span> <span class="p">|</span><span class="n">b</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">size</span><span class="p">|</span> <span class="p">{</span>
+            <span class="n">b</span><span class="nf">.iter</span><span class="p">(||</span> <span class="nf">sieve_of_eratosthenes</span><span class="p">(</span><span class="nf">black_box</span><span class="p">(</span><span class="n">size</span><span class="p">)));</span>
+        <span class="p">});</span>
+        
+        <span class="n">group</span><span class="nf">.bench_with_input</span><span class="p">(</span><span class="nn">BenchmarkId</span><span class="p">::</span><span class="nf">new</span><span class="p">(</span><span class="s">"Trial Division"</span><span class="p">,</span> <span class="n">size</span><span class="p">),</span> <span class="n">size</span><span class="p">,</span> <span class="p">|</span><span class="n">b</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">size</span><span class="p">|</span> <span class="p">{</span>
+            <span class="n">b</span><span class="nf">.iter</span><span class="p">(||</span> <span class="nf">trial_division</span><span class="p">(</span><span class="nf">black_box</span><span class="p">(</span><span class="n">size</span><span class="p">)));</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+    
+    <span class="n">group</span><span class="nf">.finish</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Criterion makes it easy to:</p>
+<ul>
+  <li>Group related benchmarks with <code class="language-plaintext highlighter-rouge">benchmark_group</code></li>
+  <li>Test multiple input sizes to observe algorithm scaling</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">bench_with_input</code> to parameterize benchmarks</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">black_box</code> to prevent compiler optimization</li>
+</ul>
+
+<h2 id="memory-usage-benchmarking">Memory Usage Benchmarking</h2>
+
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">pub</span> <span class="k">fn</span> <span class="nf">memory_benchmark</span><span class="p">(</span><span class="n">c</span><span class="p">:</span> <span class="o">&amp;</span><span class="k">mut</span> <span class="n">Criterion</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="k">mut</span> <span class="n">group</span> <span class="o">=</span> <span class="n">c</span><span class="nf">.benchmark_group</span><span class="p">(</span><span class="s">"Memory Usage Comparison"</span><span class="p">);</span>
+    
+    <span class="c1">// Create a CSV file to store memory metrics</span>
+    <span class="k">let</span> <span class="k">mut</span> <span class="n">memory_csv</span> <span class="o">=</span> <span class="nn">File</span><span class="p">::</span><span class="nf">create</span><span class="p">(</span><span class="s">"memory_metrics.csv"</span><span class="p">)</span><span class="nf">.unwrap</span><span class="p">();</span>
+    <span class="nd">writeln!</span><span class="p">(</span><span class="n">memory_csv</span><span class="p">,</span> <span class="s">"algorithm,size,peak_rss_kb,current_rss_kb,virtual_mem_bytes,virtual_mem_bytes,execution_time_ns"</span><span class="p">)</span><span class="nf">.unwrap</span><span class="p">();</span>
+    
+    <span class="k">for</span> <span class="n">size</span> <span class="k">in</span> <span class="p">[</span><span class="mi">5000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">,</span> <span class="mi">15000</span><span class="p">,</span> <span class="mi">20000</span><span class="p">,</span> <span class="mi">25000</span><span class="p">,</span> <span class="mi">30000</span><span class="p">,</span> <span class="mi">35000</span><span class="p">,</span> <span class="mi">40000</span><span class="p">,</span> <span class="mi">45000</span><span class="p">,</span> <span class="mi">50000</span><span class="p">]</span><span class="nf">.iter</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Warm-up run</span>
+        <span class="k">let</span> <span class="n">_</span> <span class="o">=</span> <span class="nf">sieve_of_eratosthenes_monitored</span><span class="p">(</span><span class="o">*</span><span class="n">size</span><span class="p">);</span>
+        
+        <span class="c1">// Now do the actual measurement</span>
+        <span class="n">group</span><span class="nf">.bench_function</span><span class="p">(</span><span class="nn">BenchmarkId</span><span class="p">::</span><span class="nf">new</span><span class="p">(</span><span class="s">"Sieve Memory"</span><span class="p">,</span> <span class="n">size</span><span class="p">),</span> <span class="p">|</span><span class="n">b</span><span class="p">|</span> <span class="p">{</span>
+            <span class="n">b</span><span class="nf">.iter_with_setup</span><span class="p">(</span>
+                <span class="p">||</span> <span class="p">{},</span>
+                <span class="p">|</span><span class="n">_</span><span class="p">|</span> <span class="p">{</span>
+                    <span class="k">let</span> <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">metrics</span><span class="p">)</span> <span class="o">=</span> <span class="nf">sieve_of_eratosthenes_monitored</span><span class="p">(</span><span class="nf">black_box</span><span class="p">(</span><span class="o">*</span><span class="n">size</span><span class="p">));</span>
+                    
+                    <span class="c1">// Log metrics to CSV</span>
+                    <span class="nd">writeln!</span><span class="p">(</span>
+                        <span class="n">memory_csv</span><span class="p">,</span> 
+                        <span class="s">"sieve,{},{},{},{},{},{}"</span><span class="p">,</span>
+                        <span class="n">size</span><span class="p">,</span>
+                        <span class="n">metrics</span><span class="py">.peak_rss_kb</span><span class="p">,</span>
+                        <span class="n">metrics</span><span class="py">.current_rss_kb</span><span class="p">,</span>
+                        <span class="n">metrics</span><span class="py">.virtual_mem_bytes</span><span class="p">,</span>
+                        <span class="n">metrics</span><span class="py">.virtual_mem_bytes</span><span class="p">,</span>
+                        <span class="n">metrics</span><span class="py">.execution_time</span><span class="nf">.as_nanos</span><span class="p">()</span>
+                    <span class="p">)</span><span class="nf">.unwrap</span><span class="p">();</span>
+                    
+                    <span class="n">metrics</span>
+                <span class="p">}</span>
+            <span class="p">)</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h2 id="algorithmic-differences">Algorithmic Differences</h2>
+
+<p>The Sieve of Eratosthenes creates a boolean array of size n+1, meaning its memory usage scales linearly with input size. Trial division builds a vector of primes that grows more slowly (approximately n/ln(n) elements), but performs many more comparisons.</p>
+
+<p>Criterion helps quantify these tradeoffs precisely, allowing developers to make informed decisions based on specific constraints.</p>
+
+<p><img src="/assets/images/algograph.png" alt="Comparison of algorithm efficiency" /></p>
+
+<div style="text-align: center;"><em>Comparison of algorithm efficency</em></div>
+
+<p>As shown in the graph above, for more prime numbers that are searched for, the time taken will increase for both algorithms - but since the Sieve of Eratosthenes (an algorithm over 2000 years old!) is more efficient, it takes much less time.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>Performance engineering isn’t just about making hardware and software run faster, it’s about creating more efficient technology for the world to use. At scale, deployment of these technologies will have profound effects on society, the economy and the way people live their lives. One can only hope that the future is free from the bloatware that seems to forever plague the world.</p>]]></content><author><name></name></author><category term="Linux," /><category term="Performance," /><category term="Rust," /><category term="Efficiency" /><summary type="html"><![CDATA[Performance Performance engineering is a topic that will forever remain important. We currently live in the information age and are entering the AI age - software is an asset that is low-cost, easy to change (cheaper than bending metal) and effortless to scale/deploy globally. This carries serious implications for the modern world.]]></summary></entry><entry><title type="html">6. Linux</title><link href="http://localhost:4000/blog/space,/ground,/linux/6-Linux/" rel="alternate" type="text/html" title="6. Linux" /><published>2025-04-26T13:00:00+01:00</published><updated>2025-04-26T13:00:00+01:00</updated><id>http://localhost:4000/blog/space,/ground,/linux/6-Linux</id><content type="html" xml:base="http://localhost:4000/blog/space,/ground,/linux/6-Linux/"><![CDATA[<h1 id="linux">Linux</h1>
 
 <p>If you’re an engineer, you’ll likely come across Linux and some of it’s many distributions (like Ubuntu, Fedora, Debian, or CentOS). This operating system is different from Windows (although similar in roots to MacOS) - in the sense there’s less “bloat” and more customisation available for the keen user.</p>
 
@@ -35,7 +190,12 @@ Imagine a metal chain, built by interleaving individual links together and able 
   <li><strong>Embedded Development:</strong> Cross-compilation toolchains, device simulators, and board support packages.</li>
 </ul>
 
-<p>Furthermore, many major commercial engineering software vendors now provide native Linux versions of their applications (e.g., MATLAB, ANSYS, Siemens NX, COMSOL Multiphysics), recognizing its dominance in research, high-performance computing (HPC), and demanding development environments. The ease of scripting and automating workflows using shell scripts or languages like Python further enhances productivity on Linux platforms.</p>]]></content><author><name></name></author><category term="space," /><category term="ground," /><category term="Linux" /><summary type="html"><![CDATA[Linux]]></summary></entry><entry><title type="html">4. Procedures</title><link href="http://localhost:4000/blog/tools/openc3/4-Procedures/" rel="alternate" type="text/html" title="4. Procedures" /><published>2025-04-23T13:00:00+01:00</published><updated>2025-04-23T13:00:00+01:00</updated><id>http://localhost:4000/blog/tools/openc3/4-Procedures</id><content type="html" xml:base="http://localhost:4000/blog/tools/openc3/4-Procedures/"><![CDATA[<p>In this article, we’ll explore the importance of procedures in spacecraft operations and provide an example procedure template.</p>
+<p>Furthermore, many major commercial engineering software vendors now provide native Linux versions of their applications (e.g., MATLAB, ANSYS, Siemens NX, COMSOL Multiphysics), recognizing its dominance in research, high-performance computing (HPC), and demanding development environments. The ease of scripting and automating workflows using shell scripts or languages like Python further enhances productivity on Linux platforms.</p>]]></content><author><name></name></author><category term="space," /><category term="ground," /><category term="Linux" /><summary type="html"><![CDATA[Linux]]></summary></entry><entry><title type="html">5. Linking the whole chain</title><link href="http://localhost:4000/blog/chain,/space,/ground/5-chain/" rel="alternate" type="text/html" title="5. Linking the whole chain" /><published>2025-04-26T13:00:00+01:00</published><updated>2025-04-26T13:00:00+01:00</updated><id>http://localhost:4000/blog/chain,/space,/ground/5-chain</id><content type="html" xml:base="http://localhost:4000/blog/chain,/space,/ground/5-chain/"><![CDATA[<p>To illustrate the point I’m going to make, I’m going to use an analogy. 
+Imagine a metal chain, built by interleaving individual links together and able to tether two things together. No matter how strong previous links in the chain are - it’s only as strong as the weakest link. In other words, strengthening links two and three won’t improve the strength of link 4, which might be weakened from corrosion or the elements. This determines the tensile stress of the chain.</p>
+
+<p>In the same way, a space program is only as strong as the weakest element. Imagine the most basic chain required to send data to a satellite: Mission Control software &gt; Ground Station network &gt; RF modem &gt; amplifier &gt; Ground station antenna &gt; through the atmosphere &gt; satellite antenna &gt; Low Noise Amplifier &gt; RF modem &gt; satellite On-board Computer (OBC). This kind of chain may look different depending on architecture or implementation, but the point remains - if you remove the RF modem, then no data gets to the satellite. Or if the link budget doesn’t have enough margin, then the satellite won’t pick up the data through the noise. Strengthening the ground station amplifier won’t help if the satellite OBC keeps failing.</p>
+
+<p>This is often why space programs include redundancy within system designs, so that even if one part of the link in the chain fails, another can take it’s place. This is also why teams are multi-disciplinary and not homogenous - no amount of software engineers could replace an expert RF engineer. It takes different skillsets and knowledge bases to build and support the kind of systems that make a space program function.</p>]]></content><author><name></name></author><category term="chain," /><category term="space," /><category term="ground" /><summary type="html"><![CDATA[To illustrate the point I’m going to make, I’m going to use an analogy. Imagine a metal chain, built by interleaving individual links together and able to tether two things together. No matter how strong previous links in the chain are - it’s only as strong as the weakest link. In other words, strengthening links two and three won’t improve the strength of link 4, which might be weakened from corrosion or the elements. This determines the tensile stress of the chain.]]></summary></entry><entry><title type="html">4. Procedures</title><link href="http://localhost:4000/blog/tools/openc3/4-Procedures/" rel="alternate" type="text/html" title="4. Procedures" /><published>2025-04-23T13:00:00+01:00</published><updated>2025-04-23T13:00:00+01:00</updated><id>http://localhost:4000/blog/tools/openc3/4-Procedures</id><content type="html" xml:base="http://localhost:4000/blog/tools/openc3/4-Procedures/"><![CDATA[<p>In this article, we’ll explore the importance of procedures in spacecraft operations and provide an example procedure template.</p>
 
 <hr />
 
