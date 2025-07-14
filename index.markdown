@@ -1,9 +1,10 @@
 ---
 layout: home
-title: build. test. fly.
 ---
 
-<div id="globe-container"></div>
+<div class="typewriter-container">
+  <div class="typewriter-text">Build. Test. Fly.</div>
+</div>
 
 ![Mississippi River Delta](./assets/images/Mississippi_River_Delta.jpg)
 
