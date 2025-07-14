@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Products
 permalink: /products/
 ---
 
-# Software for humans #
+<div style="font-size: 64px; font-weight: 300; margin: 2rem 0; text-align: center;">Software for humans</div>
+
 ## Satellite Mission Planner
 
 Satellite Mission Planner enables operators, system architects and even customers perform coarse mission planning for individual satellites or clusters of satellites. 
@@ -15,7 +15,8 @@ Satellite Mission Planner enables operators, system architects and even customer
 
 
 
-# Software for AI #
+<div style="font-size: 64px; font-weight: 300; margin: 2rem 0; text-align: center;">Software for Machines</div>
+
 ## MCP-Orbit
 
 This Model Context Protocol (MCP) server helps Large Language Models (LLMs) run orbit propagation models on satellites, giving them the correct maths needed to calculate access windows for satellites, ground stations and other targets.
