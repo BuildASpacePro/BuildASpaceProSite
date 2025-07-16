@@ -1,6 +1,8 @@
 ---
 layout: page
+title: Products
 permalink: /products/
+hide_title: true
 ---
 
 <div style="font-size: 64px; font-weight: 300; margin: 2rem 0; text-align: center;">Software for humans</div>
