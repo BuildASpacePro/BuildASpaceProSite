@@ -2,6 +2,7 @@
 layout: posts_home
 title: Posts
 permalink: /blog/
+hide_title: true
 ---
 
 ![Saint George Basin, Australia](/assets/images/Saint_George_Basin_Australia.jpg)

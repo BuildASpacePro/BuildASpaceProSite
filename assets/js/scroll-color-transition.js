@@ -38,14 +38,19 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        const links = document.querySelectorAll('a');
-        links.forEach(link => {
+        const contentLinks = document.querySelectorAll('.post-content a');
+        contentLinks.forEach(link => {
             const linkBlue = {
                 r: Math.round(0 + (136 - 0) * scrollProgress),
                 g: Math.round(102 + (204 - 102) * scrollProgress),
                 b: Math.round(204 + (255 - 204) * scrollProgress)
             };
             link.style.color = `rgb(${linkBlue.r}, ${linkBlue.g}, ${linkBlue.b})`;
+        });
+        
+        const navLinks = document.querySelectorAll('.site-nav a');
+        navLinks.forEach(link => {
+            link.style.color = textColor;
         });
     }
     
