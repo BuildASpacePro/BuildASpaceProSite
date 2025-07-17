@@ -727,5 +727,12 @@ body * {
     flex-direction: column;
   }
 }
+.site-header .wrapper {
+  max-width: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
 
 /*# sourceMappingURL=main.css.map */

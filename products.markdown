@@ -13,7 +13,7 @@ Mission Planner enables satellite operators, system architects and customers to 
 
 This top-down Mission Planner lets users task and monitor overarching events (e.g. take images over Europe, plan maintenance period over the Pacific, downlink to Svalbard, etc) while specific low-level events (e.g. power on payload sensor, prepare to run script #17, slew 29° in 5 minutes, etc) are handled by the satellites themselves.
 
-[Download for free](https://github.com/BuildASpacePro/OpenPlan)
+[Available for free](https://github.com/BuildASpacePro/OpenPlan)
 
 ![SpaceX Starlink satellites deploying in LEO](/assets/images/satellitedeploy.jpg)
 
@@ -31,4 +31,4 @@ There are certain specific tasks that LLMs are just not qualified to do (as of 2
 
 Based on the [python Skyfield module](https://rhodesmill.org/skyfield/), it enables access windows to be calculated between satellites, ground stations and other targets. Or simply for positions to be calculated. A visualiser was also added using Cesium, so the user can view when interactions take place.
 
-[Download for free](https://github.com/BuildASpacePro/Orbit-MCP)
+[Available for free](https://github.com/BuildASpacePro/Orbit-MCP)

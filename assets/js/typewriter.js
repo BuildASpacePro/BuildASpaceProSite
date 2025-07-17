@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const currentText = text.substring(0, index + 1);
             typewriterElement.innerHTML = currentText + '<span class="cursor">|</span>';
             index++;
-            setTimeout(typeText, 170); // Adjust typing speed here (170ms per character)
+            setTimeout(typeText, 120); // Adjust typing speed here (120ms per character)
         } else {
             // Keep blinking cursor for a bit, then remove it
             setTimeout(() => {
